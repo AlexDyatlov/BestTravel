@@ -1,1 +1,12 @@
 @import 'local-fonts';
+
+// font-family: 'Poppins', sans-serif;
+// font-family: 'Roboto', sans-serif;
+
+@font-face {
+  font-family: 'ForteMTStd';
+  src: url('../fonts/ForteMTStd.woff2') format('woff2'),
+       url('../fonts/ForteMTStd.woff') format('woff');
+       font-weight: 400;
+       font-display: swap;
+}

@@ -27,13 +27,28 @@ h5,
 h6 {
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
-a {
+a{
+  display: inline-block;
   text-decoration: none;
 }
 
 button:focus,
 input:focus {
   outline: transparent;
+}
+
+body{
+ font-size: 14px;
+ line-height: 19px;
+ @include f400;
+ color: #fff;
+}
+
+.container{
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
