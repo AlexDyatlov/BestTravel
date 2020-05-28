@@ -10,7 +10,7 @@ html {
 
 html,
 body {
-  height: 100%;
+  min-height: 100%;
   position: relative;
   overflow-x: hidden;
 }
@@ -51,4 +51,62 @@ body{
   max-width: 1170px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+.quantity {
+  position: relative;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button
+{
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number]
+{
+  -moz-appearance: textfield;
+}
+
+.quantity input {
+  width: 30px;
+  height: 30px;
+  display: block;
+  border: 1px solid $text;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.quantity-nav {
+  float: left;
+  position: static;
+  height: 42px;
+}
+
+.quantity-button {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  color: $pink;
+  font-size: 20px;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.quantity-button.quantity-up {
+  position: absolute;
+  left: 75px;
+  bottom: 5px;
+}
+
+.quantity-button.quantity-down {
+  position: absolute;
+  right: 60px;
+  bottom: 5px;
 }

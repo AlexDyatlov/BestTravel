@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/my-theme.css">
     <title>BestTravel</title>
   </head>
 
@@ -60,8 +61,8 @@
         <div class="header__search-form">
           <form>
             <input type="text" placeholder="Страна, курорт или отель" required>
-            <button type="submit">Найти
-              <img src="img/icons.." alt="">
+            <button type="submit">
+              Найти
             </button>
           </form>
         </div>
@@ -70,14 +71,134 @@
   </div>
 </header>
   <!-- WRITE CODE HERE -->
-
+  <section class="countries">
+    <div class="container">
+      <div class="countries__title title">
+        Самые популярные направления
+      </div>
+      <div class="countries__inner">
+        <form>
+          <div class="countries__form-dropdowns">
+            <label>Откуда</label>
+            <select>
+              <option value="Москва">из Москвы</option>
+              <option value="Санкт-Петербурга">из Санкт-Петербурга</option>
+              <option value="Новосибирск">из Новосибирска</option>
+              <option value="Екатеринбург">из Екатеринбурга</option>
+              <option value="Н.Новгород">из Н.Новгорода</option>
+              <option value="Казань">из Казани</option>
+              <option value="Челябинск">из Челябинска</option>
+              <option value="Омск">из Омска</option>
+              <option value="Самара">из Самары</option>
+              <option value="Ростов-на-Дону">из Ростова-на-Дону</option>
+              <option value="Уфа">из Уфы</option>
+              <option value="Красноярск">из Красноярска</option>
+              <option value="Воронеж">из Воронежа</option>
+              <option value="Пермь">из Перми</option>
+              <option value="Краснодар">из Краснодара</option>
+              <option value="Архангельск">из Архангельска</option>
+              <option value="Астрахань">из Астрахани</option>
+              <option value="Анапа">из Анапы</option>
+              <option value="Барнаул">из Барнаула</option>
+              <option value="Волгоград">из Волгограда</option>
+              <option value="Белгород">из Белгорода</option>
+              <option value="Благовещенск">из Благовещенска</option>
+              <option value="Иркутск">из Иркутска</option>
+              <option value="Калининград">из Калининграда</option>
+              <option value="Кемерово">из Кемерово</option>
+              <option value="Магнитогорск">из Магнитогорска</option>
+              <option value="Мин.Воды">из Мин.Вод</option>
+              <option value="Мурманск">из Мурманска</option>
+              <option value="Нижневартовск">из Нижневартовска</option>
+              <option value="Нижнекамск">из Нижнекамска</option>
+              <option value="Новокузнецк">из Новокузнецка</option>
+              <option value="Оренбург">из Оренбурга</option>
+              <option value="Саратов">из Саратова</option>
+              <option value="Симферополь">из Симферополя</option>
+              <option value="Сочи">из Сочи</option>
+              <option value="Сургут">из Сургута</option>
+              <option value="Сыктывкар">из Сыктывкара</option>
+              <option value="Тюмень">из Тюмени</option>
+              <option value="Томск">из Томска</option>
+              <option value="Ульяновск">из Ульяновска</option>
+              <option value="Хабаровск">из Хабаровска</option>
+              <option value="Ханты-Мансийск">из Ханты-Мансийска</option>
+              <option value="Чебоксары">из Чебоксар</option>
+              <option value="Чита">из Читы</option>
+              <option value="Якутск">из Якутска</option>
+            </select>
+          </div>
+          <div class="countries__form-dropdowns">
+            <label>Популярные направления</label>
+            <select>
+              <option value="Turkey">Турция</option>
+              <option value="Thailand">Таиланд</option>
+              <option value="Greece">Греция</option>
+              <option value="Spain">Испания</option>
+              <option value="Egypt">Египет</option>
+              <option value="Vietnam">Вьетнам</option>
+              <option value="Israel">Израиль</option>
+              <option value="UAE">ОАЭ</option>
+            </select>
+          </div>
+          <div class="countries__form-calendar">
+            <label>Дата вылета</label>
+            <input id="departure-date" type="text" placeholder="Дата вылета">
+          </div>
+          <div class="countries__form-nights">
+            <div class="quantity">
+              <label>Количество ночей</label>
+              <input class="nights" type="number" min="1" max="14" step="1" value="6">
+            </div>
+          </div>
+          <div class="countries__form-guests">
+            <div class="quantity">
+              <label>Туристы</label>
+              <input class="guests" type="number" min="1" max="6" step="1" value="2">
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="tour__title title">
+        Цена тура
+      </div>
+      <div class="tour__price">
+        <form>
+          <div class="tour__price-range">
+            <input type="text" class="js-range-slider" name="my_range" value="" />
+          </div>
+          <div class="tour__price-text">
+            <span>От</span>
+            <span>До</span>
+          </div>
+          <div class="tour__price-result">
+            <div id='price-from' class="number-price">8000</div>
+            <div id='price-up' class="number-price">45000</div>
+          </div>
+          <div class="tour__price-text">
+            <span class="price-total">руб.</span>
+            <span class="price-total">руб.</span>
+          </div>
+        </form>
+        <button class="search__tours" type="submit">
+          Найти
+        </button>
+      </div>
+    </div>
+  </section>
 
   <!-- STOP WRITE CODE -->
   <footer>
   
 </footer>
-  <script src="js/libs.min.js"></script>
+  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/datedropper.pro.min.js"></script>
+<script src="js/datedropper.js"></script>
+<script src="js/libs.min.js"></script>
 <script src="js/main.min.js"></script>
+
+
 </body>
 
 </html>

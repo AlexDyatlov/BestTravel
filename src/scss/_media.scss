@@ -1,0 +1,13 @@
+@media only screen and (max-width: 480px){
+div.datedropper.picker-lg {
+    width: block!important;
+    height: auto!important;
+    top: auto;
+    left: 1rem!important;
+    right: 1rem!important;
+    bottom: 1rem!important;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+}
