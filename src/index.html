@@ -5,14 +5,14 @@
 <body>
   @@include('components/_header.html')
   <!-- WRITE CODE HERE -->
-  <section class="countries">
+  <section class="search">
     <div class="container">
-      <div class="countries__title title">
+      <div class="search__title title">
         Самые популярные направления
       </div>
-      <div class="countries__inner">
+      <div class="search__inner">
         <form>
-          <div class="countries__form-dropdowns">
+          <div class="search__form-dropdowns">
             <label>Откуда</label>
             <select>
               <option value="Москва">из Москвы</option>
@@ -62,7 +62,7 @@
               <option value="Якутск">из Якутска</option>
             </select>
           </div>
-          <div class="countries__form-dropdowns">
+          <div class="search__form-dropdowns">
             <label>Популярные направления</label>
             <select>
               <option value="Turkey">Турция</option>
@@ -75,17 +75,17 @@
               <option value="UAE">ОАЭ</option>
             </select>
           </div>
-          <div class="countries__form-calendar">
+          <div class="search__form-calendar">
             <label>Дата вылета</label>
             <input id="departure-date" type="text" placeholder="Дата вылета">
           </div>
-          <div class="countries__form-nights">
+          <div class="search__form-nights">
             <div class="quantity">
               <label>Количество ночей</label>
               <input class="nights" type="number" min="1" max="14" step="1" value="6">
             </div>
           </div>
-          <div class="countries__form-guests">
+          <div class="search__form-guests">
             <div class="quantity">
               <label>Туристы</label>
               <input class="guests" type="number" min="1" max="6" step="1" value="2">
@@ -120,6 +120,136 @@
       </div>
     </div>
   </section>
+  <section class="countries">
+    <div class="container">
+      <div class="countries__inner">
+        <div class="country__item">
+          <div class="country__item-img" style="background-image: url(img/content/tyrkey.jpg);">
+
+          </div>
+          <div class="country__item-content">
+            <a href="#"><img src="img/arrow-right.svg" alt=""></a>
+            <a class="country__item-title" href="#">
+              Каппадокия
+            </a>
+            <a class="country__item-text" href="#">
+              Турция
+            </a>
+          </div>
+        </div>
+        <div class="country__item">
+          <div class="country__item-img" style="background-image: url(img/content/kefalonia.jpg);">
+
+          </div>
+          <div class="country__item-content">
+            <a href="#"><img src="img/arrow-right.svg" alt=""></a>
+            <a class="country__item-title" href="#">
+              Пляж Миртос, Кефалония
+            </a>
+            <a class="country__item-text" href="#">
+              Греция
+            </a>
+          </div>
+        </div>
+        <div class="country__item">
+          <div class="country__item-img" style="background-image: url(img/content/hurghada.jpg);">
+
+          </div>
+          <div class="country__item-content">
+            <a href="#"><img src="img/arrow-right.svg" alt=""></a>
+            <a class="country__item-title" href="#">
+              Хургада
+            </a>
+            <a class="country__item-text" href="#">
+              Египет
+            </a>
+          </div>
+        </div>
+        <div class="country__item">
+          <div class="country__item-img" style="background-image: url(img/content/phuket.jpg);">
+
+          </div>
+          <div class="country__item-content">
+            <a href="#"><img src="img/arrow-right.svg" alt=""></a>
+            <a class="country__item-title" href="#">
+              Пляж Патонг, Пхукет
+            </a>
+            <a class="country__item-text" href="#">
+              Таиланд
+            </a>
+          </div>
+        </div>
+        <span id="dots"></span>
+      </div>
+      <span id="more">
+        <div class="countries__inner">
+          <div class="country__item">
+            <div class="country__item-img" style="background-image: url(img/content/barcelona.jpg);">
+
+            </div>
+            <div class="country__item-content">
+              <a href="#"><img src="img/arrow-right.svg" alt=""></a>
+              <a class="country__item-title" href="#">
+                Барселона
+              </a>
+              <a class="country__item-text" href="#">
+                Испания
+              </a>
+            </div>
+          </div>
+          <div class="country__item">
+            <div class="country__item-img" style="background-image: url(img/content/nhatrang.jpg);">
+
+            </div>
+            <div class="country__item-content">
+              <a href="#"><img src="img/arrow-right.svg" alt=""></a>
+              <a class="country__item-title" href="#">
+                Нячанг
+              </a>
+              <a class="country__item-text" href="#">
+                Вьетнам
+              </a>
+            </div>
+          </div>
+          <div class="country__item">
+            <div class="country__item-img" style="background-image: url(img/content/eilat.jpg);">
+
+            </div>
+            <div class="country__item-content">
+              <a href="#"><img src="img/arrow-right.svg" alt=""></a>
+              <a class="country__item-title" href="#">
+                Эйлат
+              </a>
+              <a class="country__item-text" href="#">
+                Израиль
+              </a>
+            </div>
+          </div>
+          <div class="country__item">
+            <div class="country__item-img" style="background-image: url(img/content/dubai.jpg);">
+
+            </div>
+            <div class="country__item-content">
+              <a href="#"><img src="img/arrow-right.svg" alt=""></a>
+              <a class="country__item-title" href="#">
+                Дубай
+              </a>
+              <a class="country__item-text" href="#">
+                ОАЭ
+              </a>
+            </div>
+          </div>
+        </div>
+      </span>
+    </div>
+    <div class="country__item-btn">
+      <button id="btn" class="more-btn" onclick="readMore()">
+        Другие направления
+      </button>
+    </div>
+    </div>
+  </section>
+
 
   <!-- STOP WRITE CODE -->
   @@include('components/_footer.html')

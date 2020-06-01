@@ -109,9 +109,9 @@
 }
 //end header
 
-//start countries
-.countries{
-  padding: 50px 0 450px; 
+//start search
+.search{
+  padding: 50px 0 40px; 
   text-align: center;
   background-color: #fdf8f9;
   &__title{
@@ -148,7 +148,7 @@
 .irs--flat .irs-from, .irs--flat .irs-single, .irs--flat .irs-to {
   font-size: 12px;
 }
-.countries__inner{
+.search__inner{
   max-width: 1000px;
   height: 50px;
   background-color: #fff;
@@ -165,8 +165,8 @@
     color: #000;
   }
 }
-.countries__form-dropdowns,
-.countries__form-calendar{
+.search__form-dropdowns,
+.search__form-calendar{
   width: 200px;
   height: 50px;
 }
@@ -213,7 +213,7 @@
   }
 }
 
-.countries__form-calendar{
+.search__form-calendar{
   color: $text;
   position: relative;
   &:after{
@@ -237,7 +237,7 @@
     border: 1px solid $pink;
   }
 }
-.countries__form{
+.search__form{
   &-nights{
     width: 130px;
     color: $text;
@@ -321,15 +321,85 @@ body div.datedropper.picker-lg {
   border-radius: 4px;
   margin-bottom: 5px;
 }
+//end search
 
+//start countries
+.countries{
+  background-color: #fdf8f9;
+  padding: 35px 0 75px;
+}
+.countries__inner{
+  display: grid;
+  grid-template-columns: 320px 200px 320px;
+  grid-gap: 25px;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+.country__item{
+  box-shadow: 7.5px 12.99px 15px 0px rgba(189, 10, 170, 0.15);
+  position: relative;
+  &:nth-child(1){
+    grid-column: 1/-2;
+  }
+  &:nth-child(4){
+    grid-column: 2/-1;
+  }
+  &:nth-child(5){
+    grid-column: 1/-2;
+  }
+  &:nth-child(8){
+    grid-column: 2/-1;
+  }
+  &-img{
+    min-height: 330px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  &:hover &-content{
+    height: 100%;
+  }
+  &-content{
+    text-align: center;
+    background-color: rgba($pink, .5);
+    height: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+    transition: all .5s;
+  }
+  &-title{
+    color: #fff;
+    @include f600;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+  }
+  &-text{
+    color: #fff;
+    @include f400;
+  }
+}
+.country__item-btn{
+  text-align: center;
+}
+.more-btn{
+  padding: 20px 35px;
+  background-color: $pink;
+  box-shadow: 7.5px 12.99px 15px 0px rgba(189, 10, 170, 0.15);
+  border-radius: 42px;
+  border: none;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+}
 //end countries
 
-
-
-
-
-
-
-
-
 @import 'media';
+
