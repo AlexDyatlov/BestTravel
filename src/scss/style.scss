@@ -465,7 +465,7 @@ body div.datedropper.picker-lg {
     }
   }
   &__title{
-    color: #666666;
+    color: $text-color;
     font-size: 16px;
     line-height: 24px;
     span{
@@ -481,7 +481,7 @@ body div.datedropper.picker-lg {
     font-style: italic;
     font-size: 16px;
     line-height: 24px;
-    color: #666666;
+    color: $text-color;
     span{
       color: $pink;
     }
@@ -489,10 +489,82 @@ body div.datedropper.picker-lg {
 }
 //end hotels
 
-
-
-
-
+//start travel-blog
+.travel-blog{
+  padding: 135px 0 75px;
+  background-color: #fdf8f9;
+}
+.blog__items{
+  display: flex;
+  justify-content: space-between;
+  max-width: 1070px;
+  margin: 0 auto;
+}
+.blog__item{
+  width: 330px;
+  min-height: 330px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0px 0px 30px 0px rgba(247, 111, 141, 0.1);
+  padding: 25px;
+  &-title{
+    color: $pink;
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 40px;
+  }
+  &-list{
+    a{
+      color: $text-color;
+      @include f300;
+      margin-bottom: 15px;
+    }
+  }
+  &-text{
+    color: $text-color;
+    font-style: italic;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+  &-form{
+    position: relative;
+    input{
+      width: 100%;
+      height: 50px;
+      background-color: #f9eef1;
+      border: none;
+      @include f300;
+      color: $text-color;
+      font-size: 16px;
+      padding-left: 18px;
+      padding-right: 60px;
+      &::placeholder{
+        color: $text-color;
+      }
+    }
+    button{
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 50px;
+      width: 50px;
+      border: none;
+      background-color: transparent;
+      &::before{
+        content: "\f1d8";
+        position: absolute;
+        font-family: 'icomoon';
+        color: $pink;
+        font-size: 22px;
+        top: 13px;
+        right: 15px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+//end travel-blog
 
 
 @import 'media';
