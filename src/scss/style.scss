@@ -117,12 +117,12 @@
   &__title{
     margin-bottom: 40px;
   }
-  .title{
-    @include f600;
-    color: #626161;
-    font-size: 18px;
-    line-height: 26px;
-  }
+}
+.title{
+  @include f600;
+  color: #626161;
+  font-size: 18px;
+  line-height: 26px;
 }
 .irs-max,
 .irs-min{
@@ -326,7 +326,7 @@ body div.datedropper.picker-lg {
 //start countries
 .countries{
   background-color: #fdf8f9;
-  padding: 35px 0 75px;
+  padding: 35px 0 0;
 }
 .countries__inner{
   display: grid;
@@ -386,10 +386,9 @@ body div.datedropper.picker-lg {
     @include f400;
   }
 }
-.country__item-btn{
-  text-align: center;
-}
+
 .more-btn{
+  position: relative;
   padding: 20px 35px;
   background-color: $pink;
   box-shadow: 7.5px 12.99px 15px 0px rgba(189, 10, 170, 0.15);
@@ -398,8 +397,102 @@ body div.datedropper.picker-lg {
   color: #fff;
   text-transform: uppercase;
   cursor: pointer;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, 50%);
 }
 //end countries
 
-@import 'media';
+//start hotels
+.hotels{
+  padding: 135px 0 55px;
+  text-align: center;
+  background-color: #fff;
+  &__title{
+    margin-bottom: 20px;
+  }
+  &__text{
+    font-size: 18px;
+    line-height: 26px;
+    @include f300;
+    margin-bottom: 40px;
+    color: $text;
+  }
+}
+.tabs{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 65px;
+  .tab{
+    width: 230px;
+    color: #cccccc;
+    @include f300;
+    cursor: pointer;
+  }
+  .tab.active{
+    color: $pink;
+    padding: 10px 50px;
+    border-radius: 42px;
+    box-shadow: 0px 0px 20px 0px rgba(247, 111, 141, 0.15);
+    @include f400;
+  }
+}
+.tab-item__wrapper{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.tab-item__content{
+  display: flex;
+  margin-bottom: 25px;
+}
+.tab-item__info{
+  width: 330px;
+  padding-left: 20px;
+}
+.tab-item{
+  display: none;
+  &:nth-child(2){
+   display: block;
+  }
+  &__img{
+    img{
+      width: 200px;
+      height: 200px;
+      border-radius: 4px;
+      box-shadow: 7.5px 12.99px 15px 0px rgba(247, 111, 141, 0.1);
+    }
+  }
+  &__title{
+    color: #666666;
+    font-size: 16px;
+    line-height: 24px;
+    span{
+      display: block;
+    }
+  }
+  &__text{
+    color: $text;
+    text-align: left;
+    min-height: 130px
+  }
+  &__price{
+    font-style: italic;
+    font-size: 16px;
+    line-height: 24px;
+    color: #666666;
+    span{
+      color: $pink;
+    }
+  }
+}
+//end hotels
 
+
+
+
+
+
+
+@import 'media';
