@@ -497,8 +497,6 @@ body div.datedropper.picker-lg {
 .blog__items{
   display: flex;
   justify-content: space-between;
-  max-width: 1070px;
-  margin: 0 auto;
 }
 .blog__item{
   width: 330px;
@@ -565,6 +563,79 @@ body div.datedropper.picker-lg {
   }
 }
 //end travel-blog
+
+//start footer
+.footer{
+background-color: #fff;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0 25px;
+    align-items: center;
+  }
+}
+.footer__logo{
+  a{
+    color: $pink;
+    font-size: 40px;
+    line-height: 48px;
+  }
+}
+.footer__col{
+  max-width: 200px;
+  min-height: 315px;
+  width: 100%;
+  &-title{
+    font-size: 18px;
+    line-height: 26px;
+    color: $pink;
+    margin-bottom: 15px;
+  }
+  &-list{
+    a{
+      color: $text-color;
+      @include f300;
+      margin-bottom: 15px;
+    }
+  }
+}
+.footer__info{
+  color: $text-color;
+  @include f300;
+  margin-bottom: 15px;
+  &:hover{
+    color: $pink;
+  }
+}
+.footer__copy{
+  &-inner{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    border-top: 2px solid #cccccc;
+    align-items: center;
+  }
+  &-text{
+    color: #000;
+  }
+  &-social{
+    height: 30px;
+    li{
+      display: inline-block;
+      & + li{
+        margin-left: 8px;
+      }
+    }
+    a svg{
+      width: 30px;
+      height: 30px;
+    }
+    path{
+      fill: #cccccc;
+    }
+  }
+}
+//end footer
 
 
 @import 'media';
