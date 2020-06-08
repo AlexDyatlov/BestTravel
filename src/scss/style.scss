@@ -2,16 +2,649 @@
 @import 'vars';
 @import 'global';
 
+//start header
+.header{
+  min-height: 789px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; 
+}
+.header__top{
+  height: 70px;
+  background-color: rgba(#a44276, .5);
+}
+.header__top-inner{
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+  align-items: center;
+  margin-bottom: 185px;
+}
+.header__logo{
+  font-family: 'ForteMTStd';
+  font-size: 24px;
+  line-height: 32px;
+  a{
+    color: #fff;
+  }
+}
+.menu{
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+.menu__list{
+  li{
+    display: inline-block;
+    & + li{
+      margin-left: 50px;
+    }
+  }
+  a{
+    color: #fff;
+  }
+}
+.header__search{
+  text-align: center;
+  &-title{
+    font-size: 48px;
+    line-height: 56px;
+    @include f700;
+    margin-bottom: 10px;
+    span{
+      font-family: 'ForteMTStd';
+    }
+  }
+  &-text{
+    font-size: 24px;
+    line-height: 32px;
+    @include f600;
+    font-style: italic;
+    margin-bottom: 50px;
+  }
+  &-form{
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+    input{
+      display: block;
+      width: 100%;
+      height: 50px;
+      box-shadow: 2.5px 4.33px 20px 0px rgba(0, 0, 0, 0.3);
+      border-radius: 42px;
+      border: none;
+      padding-left: 60px;
+      padding-right: 120px;
+      @include f400;
+      &::placeholder{
+        color: $text;
+        @include f400;
+      }
+    }
+    &::after{
+      position: absolute;
+      font-family: 'icomoon';
+      content: "\f002";
+      color: $text;
+      opacity: 0.5;
+      font-size: 23px;
+      left: 22px;
+      top: 15px;
+    }
+    button{
+      position: absolute;
+      border: none;
+      background-color: $pink;
+      @include f600;
+      color: #fff;
+      font-size: 18px;
+      box-shadow: 2.5px 4.33px 20px 0px rgba(0, 0, 0, 0.3);
+      padding: 20px 40px;
+      border-radius: 42px;
+      top: -6px;
+      right: -55px;
+      cursor: pointer;
+    }
+  }
+}
+//end header
 
+//start search
+.search{
+  padding: 50px 0 40px; 
+  text-align: center;
+  background-color: #fdf8f9;
+  &__title{
+    margin-bottom: 40px;
+  }
+}
+.title{
+  @include f600;
+  color: #626161;
+  font-size: 18px;
+  line-height: 26px;
+}
+.irs-max,
+.irs-min{
+  display: none;
+}
+.irs--flat .irs-line{
+  height: 10px;
+}
+.irs--flat .irs-bar{
+  background-color: $pink;
+  height: 10px;
+}
+.irs--flat .irs-handle{
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 4px solid $pink;
+  background-color: #fff;
+}
+.irs--flat .irs-handle>i:first-child{
+  display: none;
+}
+.irs--flat .irs-from, .irs--flat .irs-single, .irs--flat .irs-to {
+  font-size: 12px;
+}
+.search__inner{
+  max-width: 1000px;
+  height: 50px;
+  box-shadow: 0px 0px 20px 0px rgba(247, 111, 141, 0.15);
+  margin: 0 auto 40px;
+  align-items: center;
+  form{
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  label{
+    color: #000;
+  }
+}
+.search__form-dropdowns,
+.search__form-calendar{
+  width: 200px;
+  height: 50px;
+}
+.jq-selectbox{
+  display: block;
+  li{
+    text-align: left;
+  }
+}
+.jq-selectbox__select{
+  height: 30px;
+  background: transparent;
+  background-color: transparent;
+  box-shadow: none;
+  text-shadow: none;
+  border-bottom-color: transparent;
+  border: 1px solid $text;
+  padding: 0 10px;
+  &:hover{
+    background: transparent;
+  }
+  &:active{
+    box-shadow: none;
+  }
+}
+.jq-selectbox.focused .jq-selectbox__select{
+  border: 1px solid $pink;
+}
+.jq-selectbox__trigger{
+  border-left: none;
+}
+.jq-selectbox__trigger-arrow {
+  border: none;
+  color: $text;
+  &::before{
+    font-family: 'icomoon';
+    content: "\f041";
+    position: relative;
+    right: 5px;
+    top: -15px;
+  }
+  &:hover{
+    color: $pink;
+  }
+}
 
+.search__form-calendar{
+  color: $text;
+  position: relative;
+  &:after{
+    font-family: 'icomoon';
+    content: "\f133";
+    position: absolute;
+    top: 0px;
+    right: 30px;
+  }
+}
 
+#departure-date{
+  width: 200px;
+  height: 30px;
+  border: 1px solid $text;
+  border-radius: 4px;
+  text-align: center;
+  padding: 0 5px;
+  cursor: pointer;
+  &:hover{
+    border: 1px solid $pink;
+  }
+}
+.search__form{
+  &-nights{
+    width: 130px;
+    height: 50px;
+    color: $text;
+    position: relative;
+    &:after{
+      font-family: 'icomoon';
+      content: "\f186";
+      position: absolute;
+      top: 0px;
+      right: -15px;
+    }
+  }
+  &-guests{
+    width: 130px;
+    height: 50px;
+    color: $text;
+    position: relative;
+    &:after{
+      font-family: 'icomoon';
+      content: "\f0c0";
+      position: absolute;
+      top: 0px;
+      right: 10px;
+    }
+  }
+}
 
+.search__tours{
+  position: absolute;
+  padding: 18px 40px;
+  bottom: 0;
+  right: -140px;
+  border-radius: 4px;
+  box-shadow: 0px 0px 20px 0px rgba(247, 111, 141, 0.15);
+  background-color: $pink;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  @include f600;
+}
+// для адаптива календаря
+body div.datedropper.picker-lg {  
+  width: 300px !important;
+  height: 430px !important;
+}
+.tour__title{
+  margin-bottom: 20px;
+}
+.tour__price{
+  max-width: 500px;
+  background-color: #fff;
+  box-shadow: 0px 0px 20px 0px rgba(247, 111, 141, 0.15);
+  border-radius: 5px;
+  margin: 0 auto;
+  align-items: center;
+  position: relative;
+  color: #000;
+  form{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5px 25px;
+  }
+  &-range{
+    width: 180px;
+  }
+  &-block{
+    display: flex;
+    justify-content: space-between;
+  }
+  &-text{
+    margin-right: 10px;
+    span{
+      display: block;
+      padding: 2px 0;
+    }
+    .price-total{
+      margin-left: 10px;
+    }
+  }
+}
+.number-price{
+  border: 1px solid $text;
+  width: 100px;
+  height: 20px;
+  border-radius: 4px;
+  margin-bottom: 5px;
+}
+//end search
 
+//start countries
+.countries{
+  background-color: #fdf8f9;
+  padding: 35px 0 0;
+}
+.countries__inner{
+  display: grid;
+  grid-template-columns: 320px 200px 320px;
+  grid-gap: 25px;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+.country__item{
+  box-shadow: 7.5px 12.99px 15px 0px rgba(189, 10, 170, 0.15);
+  position: relative;
+  &:nth-child(1){
+    grid-column: 1/-2;
+  }
+  &:nth-child(4){
+    grid-column: 2/-1;
+  }
+  &:nth-child(5){
+    grid-column: 1/-2;
+  }
+  &:nth-child(8){
+    grid-column: 2/-1;
+  }
+  &-img{
+    min-height: 330px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  &:hover &-content{
+    height: 100%;
+  }
+  &-content{
+    text-align: center;
+    background-color: rgba($pink, .5);
+    height: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+    transition: all .5s;
+  }
+  &-title{
+    color: #fff;
+    @include f600;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+  }
+  &-text{
+    color: #fff;
+    @include f400;
+  }
+}
 
+.more-btn{
+  position: relative;
+  padding: 20px 35px;
+  background-color: $pink;
+  box-shadow: 7.5px 12.99px 15px 0px rgba(189, 10, 170, 0.15);
+  border-radius: 42px;
+  border: none;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, 50%);
+}
+//end countries
 
+//start hotels
+.hotels{
+  padding: 135px 0 55px;
+  text-align: center;
+  background-color: #fff;
+  &__title{
+    margin-bottom: 20px;
+  }
+  &__text{
+    font-size: 18px;
+    line-height: 26px;
+    @include f300;
+    margin-bottom: 40px;
+    color: $text;
+    padding: 0 15px;
+  }
+}
+.tabs{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 65px;
+  .tab{
+    width: 230px;
+    color: #cccccc;
+    @include f300;
+    cursor: pointer;
+  }
+  .tab.active{
+    color: $pink;
+    padding: 10px 50px;
+    border-radius: 42px;
+    box-shadow: 0px 0px 20px 0px rgba(247, 111, 141, 0.15);
+    @include f400;
+  }
+}
+.tab-item__wrapper{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.tab-item__content{
+  display: flex;
+  margin-bottom: 25px;
+}
+.tab-item__info{
+  width: 330px;
+  padding-left: 20px;
+}
+.tab-item{
+  display: none;
+  &:nth-child(2){
+   display: block;
+  }
+  &__img{
+    img{
+      width: 200px;
+      height: 200px;
+      border-radius: 4px;
+      box-shadow: 7.5px 12.99px 15px 0px rgba(247, 111, 141, 0.1);
+    }
+  }
+  &__title{
+    color: $text-color;
+    font-size: 16px;
+    line-height: 24px;
+    span{
+      display: block;
+    }
+  }
+  &__text{
+    color: $text;
+    text-align: left;
+    min-height: 130px
+  }
+  &__price{
+    font-style: italic;
+    font-size: 16px;
+    line-height: 24px;
+    color: $text-color;
+    span{
+      color: $pink;
+    }
+  }
+}
+//end hotels
 
+//start travel-blog
+.travel-blog{
+  padding: 135px 0 75px;
+  background-color: #fdf8f9;
+}
+.blog__items{
+  display: flex;
+  justify-content: space-between;
+}
+.blog__item{
+  max-width: 330px;
+  width: 100%;
+  min-height: 330px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0px 0px 30px 0px rgba(247, 111, 141, 0.1);
+  padding: 25px;
+  &-title{
+    color: $pink;
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 40px;
+  }
+  &-list{
+    a{
+      color: $text-color;
+      @include f300;
+      margin-bottom: 15px;
+    }
+  }
+  &-text{
+    color: $text-color;
+    font-style: italic;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+  &-form{
+    position: relative;
+    input{
+      width: 100%;
+      height: 50px;
+      background-color: #f9eef1;
+      border: none;
+      @include f300;
+      color: $text-color;
+      font-size: 16px;
+      padding-left: 18px;
+      padding-right: 60px;
+      &::placeholder{
+        color: $text-color;
+      }
+    }
+    button{
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 50px;
+      width: 50px;
+      border: none;
+      background-color: transparent;
+      &::before{
+        content: "\f1d8";
+        position: absolute;
+        font-family: 'icomoon';
+        color: $pink;
+        font-size: 22px;
+        top: 13px;
+        right: 15px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+//end travel-blog
 
-
+//start footer
+.footer{
+background-color: #fff;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0 25px;
+    align-items: center;
+  }
+}
+.footer__logo{
+  a{
+    color: $pink;
+    font-size: 40px;
+    line-height: 48px;
+    margin-right: 20px;
+  }
+}
+.footer__col{
+  max-width: 200px;
+  min-height: 315px;
+  width: 100%;
+  &-title{
+    font-size: 18px;
+    line-height: 26px;
+    color: $pink;
+    margin-bottom: 15px;
+  }
+  &-list{
+    a{
+      color: $text-color;
+      @include f300;
+      margin-bottom: 15px;
+    }
+  }
+}
+.footer__info{
+  color: $text-color;
+  @include f300;
+  margin-bottom: 15px;
+  display: block;
+  &:hover{
+    color: $pink;
+  }
+}
+.footer__copy{
+  &-inner{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    border-top: 2px solid #cccccc;
+    align-items: center;
+  }
+  &-text{
+    color: #000;
+  }
+  &-social{
+    height: 30px;
+    li{
+      display: inline-block;
+      & + li{
+        margin-left: 8px;
+      }
+    }
+    a svg{
+      width: 30px;
+      height: 30px;
+    }
+    path{
+      fill: #cccccc;
+    }
+  }
+}
+//end footer
 
 
 @import 'media';

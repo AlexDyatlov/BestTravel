@@ -10,7 +10,7 @@ html {
 
 html,
 body {
-  height: 100%;
+  min-height: 100%;
   position: relative;
   overflow-x: hidden;
 }
@@ -27,13 +27,90 @@ h5,
 h6 {
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
-a {
+a{
+  display: inline-block;
   text-decoration: none;
 }
 
 button:focus,
 input:focus {
   outline: transparent;
+}
+
+body{
+ font-size: 14px;
+ line-height: 19px;
+ @include f400;
+ color: #fff;
+}
+
+.container{
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.quantity {
+  position: relative;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button
+{
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number]
+{
+  -moz-appearance: textfield;
+}
+
+.quantity input {
+  width: 30px;
+  height: 30px;
+  display: block;
+  border: 1px solid $text;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.quantity-nav {
+  float: left;
+  position: static;
+  height: 42px;
+}
+
+.quantity-button {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  color: $pink;
+  font-size: 20px;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.quantity-button.quantity-up {
+  position: absolute;
+  left: 75px;
+  bottom: 5px;
+}
+
+.quantity-button.quantity-down {
+  position: absolute;
+  right: 60px;
+  bottom: 5px;
+}
+
+#more{
+  display: none;
 }

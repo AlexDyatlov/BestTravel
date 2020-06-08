@@ -1,0 +1,276 @@
+@media (max-width: 1150px){
+  .tab-item{
+    &__wrapper{
+    justify-content: center;
+    }
+    &__content{
+      padding-left: 15px;
+    }
+  }
+  .blog__item{
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 1000px){
+  .search__inner{
+    margin-bottom: 120px;
+    form{
+      background-color: #fff;
+      flex-wrap: wrap;
+    }
+    label{
+      display: block;
+      margin-bottom: 5px;
+    }
+  }
+  .cities-russia{
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  .countries__inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .footer__inner{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .footer__logo a{
+    margin-bottom: 20px;
+  }
+  .footer__col{
+    min-width: 100%;
+    min-height: 130px;
+    &-adress{
+      min-width: 100%;
+      min-height: 50px;;
+    }
+    &-list{
+      column-count: 4;
+    }
+  }
+}
+
+@media (max-width: 850px){
+  .search{
+    padding: 50px 0 80px;
+  }
+  .search__tours{
+    top: 75px;
+    right: 0;
+    width: 100%;
+    height: 52px;
+  }
+  .blog__items{
+    flex-wrap: wrap;
+  }
+  .blog__item{
+    flex-basis: calc(50% - 20px);
+    margin-bottom: 20px;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 750px){
+  .search__inner{
+    margin-bottom: 270px;
+  }
+  .menu__list{
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background-color: rgba(#a44276, .5);
+    a{
+      display: block;
+      padding: 10px 0;
+      border-bottom: 1px solid #fff;
+    }
+    li{
+      display: block;
+      & + li{
+        margin-left: 0;
+      }
+      &:first-child{
+        border-top: 1px solid #fff;
+      }
+    }
+  }
+  .menu__btn{
+    display: block;
+    width: 30px;
+    div{
+      background-color: #fff;
+      height: 3px;
+      & + div{
+        margin-top: 6px;
+      }
+    }
+  }
+  .header__top-inner{
+    margin-bottom: 220px;
+  }
+  .header__search-form{
+    input{
+      padding-right: 130px;
+    }
+    button{
+      top: 0px;
+      right: -1px;
+      padding: 15px 30px;
+    }
+  }
+  .popular-countries{
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  .search__form-calendar{
+    margin-bottom: 25px;
+    width: 100%;
+  }
+  #departure-date{
+    width: 100%;
+  }
+  .search__form-guests{
+    text-align: left;
+    left: 30px;
+    &:after{
+      right: 45px;
+    }
+  }
+  .search__form-calendar{
+    &:after{
+      position: relative;
+      top: -54px;
+      right: -57px;
+    }
+  }
+  .country__item{
+    &:nth-child(odd){
+      grid-column: 1/-1;
+    }
+    &:nth-child(even){
+      grid-column: 1/-1
+    }
+  }
+  .tabs{
+    flex-wrap: wrap;
+    .tab{
+      width: 100%;
+      margin-bottom: 30px;
+    }
+  }
+  .footer__col-list{
+    column-count: 3;
+  }
+}
+
+@media (max-width: 600px){
+  .tab-item{
+    &__content{
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 15px;
+      border-bottom: 1px solid $pink;
+      &:first-child{
+        border-top: 1px solid $pink;
+      }
+    }
+    &__title{
+      margin-bottom: 10px;
+    }
+    &__info{
+      width: 100%;
+      padding-left: 0;
+    }
+  }
+  .blog__item{
+    flex-basis: 100%;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 550px){
+  .tour__price{
+    form{
+      flex-wrap: wrap;
+    }
+    &-range{
+      width: 240px;
+      margin-right: 12px;
+      margin-bottom: 15px;
+    }
+    &-block{
+      margin-left: 25px;
+    }
+  }
+  .search__tours{
+    top: 125px;
+  }
+  body div.datedropper.picker-lg {  
+    margin: 0 auto;
+  }
+  .footer__col-list{
+    column-count: 2;
+  }
+}
+
+@media (max-width: 450px){
+  .header__search{
+    &-title{
+      font-size: 30px;
+      line-height: 38px;
+    }
+    &-text{
+      font-size: 17px;
+      line-height: 26px;
+    }
+    &-form{
+      input{
+        padding-right: 30px;
+      }
+      button{
+        padding: 15px 40px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, 100%);
+      }
+    }
+  }
+  .tab-item{
+    &__text{
+      margin-bottom: 10px;
+    }
+  }
+  body div.datedropper.picker-lg {  
+    width: 280px!important;
+    height: 410px!important;
+  }
+  .footer__col-list{
+    column-count: 1;
+  }
+  .footer__info-phone{
+    margin-bottom: 20px;
+  }
+  .footer__copy{
+    position: relative;
+    &-social{
+      position: absolute;
+      top: -35px;
+    }
+    &-inner{
+      display: block;
+      text-align: center;
+    }
+  }
+}
+
+@media (min-width: 751px){
+  .menu__list {
+    display: block !important;
+  }
+}
+  
