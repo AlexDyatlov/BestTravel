@@ -22,15 +22,15 @@
           </a>
         </div>
         <nav class="menu">
+          <div class="menu__btn">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
           <ul class="menu__list">
             <li>
               <a href="#">
-                Проживание
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                События
+                Главная
               </a>
             </li>
             <li>
@@ -40,7 +40,12 @@
             </li>
             <li>
               <a href="#">
-                Бонусы
+                Проживание
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                События
               </a>
             </li>
             <li>
@@ -78,7 +83,7 @@
       </div>
       <div class="search__inner">
         <form>
-          <div class="search__form-dropdowns">
+          <div class="search__form-dropdowns cities-russia">
             <label>Откуда</label>
             <select>
               <option value="Москва">из Москвы</option>
@@ -128,7 +133,7 @@
               <option value="Якутск">из Якутска</option>
             </select>
           </div>
-          <div class="search__form-dropdowns">
+          <div class="search__form-dropdowns popular-countries">
             <label>Популярные направления</label>
             <select>
               <option value="Turkey">Турция</option>
@@ -167,17 +172,19 @@
           <div class="tour__price-range">
             <input type="text" class="js-range-slider" name="my_range" value="" />
           </div>
-          <div class="tour__price-text">
-            <span>От</span>
-            <span>До</span>
-          </div>
-          <div class="tour__price-result">
-            <div id='price-from' class="number-price">8000</div>
-            <div id='price-up' class="number-price">45000</div>
-          </div>
-          <div class="tour__price-text">
-            <span class="price-total">руб.</span>
-            <span class="price-total">руб.</span>
+          <div class="tour__price-block">
+            <div class="tour__price-text">
+              <span>От</span>
+              <span>До</span>
+            </div>
+            <div class="tour__price-result">
+              <div id='price-from' class="number-price">8000</div>
+              <div id='price-up' class="number-price">45000</div>
+            </div>
+            <div class="tour__price-text">
+              <span class="price-total">руб.</span>
+              <span class="price-total">руб.</span>
+            </div>
           </div>
         </form>
         <button class="search__tours" type="submit">
@@ -1309,12 +1316,12 @@
           </div>
           <ul class="blog__item-list">
             <li>
-              <li><a href="#">Способ оплаты</a></li>
-              <li><a href="#">Как забронировать отель</a></li>
-              <li><a href="#">Как сделать возврат денег</a></li>
-              <li><a href="#">Документы для виз</a></li>
-              <li><a href="#">Страхование</a></li>
-              <li><a href="#">Политика конфиденциальности</a></li>
+            <li><a href="#">Способ оплаты</a></li>
+            <li><a href="#">Как забронировать отель</a></li>
+            <li><a href="#">Как сделать возврат денег</a></li>
+            <li><a href="#">Документы для виз</a></li>
+            <li><a href="#">Страхование</a></li>
+            <li><a href="#">Политика конфиденциальности</a></li>
             </li>
           </ul>
         </div>
@@ -1338,12 +1345,12 @@
           </div>
           <ul class="blog__item-list">
             <li>
-              <li><a href="#">Промокоды</a></li>
-              <li><a href="#">Скидки</a></li>
-              <li><a href="#">Турблог</a></li>
-              <li><a href="#">Отзывы</a></li>
-              <li><a href="#">Новости</a></li>
-              <li><a href="#">Календарь событий</a></li>
+            <li><a href="#">Промокоды</a></li>
+            <li><a href="#">Скидки</a></li>
+            <li><a href="#">Турблог</a></li>
+            <li><a href="#">Отзывы</a></li>
+            <li><a href="#">Новости</a></li>
+            <li><a href="#">Календарь событий</a></li>
             </li>
           </ul>
         </div>
@@ -1362,11 +1369,11 @@
             BestTravel
           </a>
         </div>
-        <div class="footer__col">
+        <div class="footer__col footer__col-countries">
           <div class="footer__col-title">
             Гид по странам
           </div>
-          <div class="footer__col-list">
+          <ul class="footer__col-list">
             <li><a href="#">Путевки в Турцию</a></li>
             <li><a href="#">Путевки в Таиланд</a></li>
             <li><a href="#">Путевки в Грецию</a></li>
@@ -1375,13 +1382,13 @@
             <li><a href="#">Путевки в Вьетнам</a></li>
             <li><a href="#">Путевки в Израиль</a></li>
             <li><a href="#">Путевки в ОАЭ</a></li>
-          </div>
+          </ul>
         </div>
-        <div class="footer__col">
+        <div class="footer__col footer__col-company">
           <div class="footer__col-title">
             О компании
           </div>
-          <div class="footer__col-list">
+          <ul class="footer__col-list">
             <li><a href="#">О нас</a></li>
             <li><a href="#">Контакты</a></li>
             <li><a href="#">Медиа</a></li>
@@ -1390,9 +1397,9 @@
             <li><a href="#">Вакансии</a></li>
             <li><a href="#">Общая информация</a></li>
             <li><a href="#">Служба поддержки</a></li>
-          </div>
+          </ul>
         </div>
-        <div class="footer__col">
+        <div class="footer__col footer__col-adress">
           <div class="footer__col-title">
             Контакты
           </div>
