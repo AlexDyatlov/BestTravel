@@ -65,6 +65,7 @@ $(function(){
       });
 
       $('.menu__btn').on('click', function(){
+        $(this).toggleClass("is-active");
         $('.menu__list').slideToggle();
       });
 
@@ -91,6 +92,52 @@ function readMore() {
 
 }
 
+function scrollTo(element) {
+  window.scroll({
+    left: 0,
+    top: element.offsetTop,
+    behavior: 'smooth'
+  })
+}
 
+var home = document.querySelector('.home');
+var header = document.querySelector('.header');
 
+var tours = document.querySelector('.tours');
+var search = document.querySelector('.search');
 
+var housing = document.querySelector('.housing');
+var hotels = document.querySelector('.hotels');
+
+var events = document.querySelector('.events');
+var blog = document.querySelector('.travel-blog');
+
+var contacts = document.querySelector('.contacts');
+var footer = document.querySelector('.footer');
+
+home.addEventListener('click', () => {
+  scrollTo(header);
+});
+
+tours.addEventListener('click', () => {
+  scrollTo(search);
+});
+
+housing.addEventListener('click', () => {
+  scrollTo(hotels);
+});
+
+events.addEventListener('click', () => {
+  scrollTo(blog);
+});
+
+contacts.addEventListener('click', () => {
+  scrollTo(footer);
+});
+
+var btn = $('#button');
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
+});
