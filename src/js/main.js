@@ -5,22 +5,66 @@ $(function(){
     selectVisibleOptions: '8'
   });
 
-  let divResult1 = document.getElementById('price-from');
-  let divResult2 = document.getElementById('price-up');
+  // start range-slider
+  var $range = $(".js-range-slider"),
+  $inputFrom = $(".js-input-from"),
+  $inputTo = $(".js-input-to"),
+  instance,
+  min = 0,
+  max = 900000,
+  from = 0,
+  to = 0;
 
-  $(".js-range-slider").ionRangeSlider({
+ $(".js-range-slider").ionRangeSlider({
     type: "double",
-    min: 0,
-    max: 900000,
+    min: min,
+    max: max,
     from: 8000,
     to: 45000,
     prefix: "₽",
-    onChange: function (data) {
-      divResult1.textContent = `${data.from}`,
-      divResult2.textContent = `${data.to}`;
-    },
-
+		onStart: updateInputs,
+    onChange: updateInputs
    });
+   instance = $range.data("ionRangeSlider");
+
+   function updateInputs (data){
+		from = data.from;
+    to = data.to;
+    
+    $inputFrom.prop("value", from);
+    $inputTo.prop("value", to);	
+    }
+
+    $inputFrom.on("input", function () {
+        var val = $(this).prop("value");
+        
+        // validate
+        if (val < min) {
+            val = min;
+        } else if (val > to) {
+            val = to;
+        }
+        
+        instance.update({
+            from: val
+        });
+    });
+
+    $inputTo.on("input", function () {
+        var val = $(this).prop("value");
+        
+        // validate
+        if (val < from) {
+            val = from;
+        } else if (val > max) {
+            val = max;
+        }
+        
+        instance.update({
+            to: val
+        });
+    });
+    // end range-slider
 
    $('<div class="quantity-nav"><div class="quantity-button quantity-up">+</div><div class="quantity-button quantity-down">-</div></div>').insertAfter('.quantity input');
     $('.quantity').each(function() {
@@ -92,47 +136,9 @@ function readMore() {
 
 }
 
-function scrollTo(element) {
-  window.scroll({
-    left: 0,
-    top: element.offsetTop,
-    behavior: 'smooth'
-  })
-}
-
-var home = document.querySelector('.home');
-var header = document.querySelector('.header');
-
-var tours = document.querySelector('.tours');
-var search = document.querySelector('.search');
-
-var housing = document.querySelector('.housing');
-var hotels = document.querySelector('.hotels');
-
-var events = document.querySelector('.events');
-var blog = document.querySelector('.travel-blog');
-
-var contacts = document.querySelector('.contacts');
-var footer = document.querySelector('.footer');
-
-home.addEventListener('click', () => {
-  scrollTo(header);
-});
-
-tours.addEventListener('click', () => {
-  scrollTo(search);
-});
-
-housing.addEventListener('click', () => {
-  scrollTo(hotels);
-});
-
-events.addEventListener('click', () => {
-  scrollTo(blog);
-});
-
-contacts.addEventListener('click', () => {
-  scrollTo(footer);
+var scroll = new SmoothScroll('a[href*="#"]',{
+  speed: 700,
+  speedAsDuration: true
 });
 
 var btn = $('#button');

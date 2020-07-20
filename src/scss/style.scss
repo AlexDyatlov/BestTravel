@@ -334,6 +334,7 @@ body div.datedropper.picker-lg {
   &-block{
     display: flex;
     justify-content: space-between;
+    max-width: 175px;
   }
   &-text{
     margin-right: 10px;
@@ -352,6 +353,9 @@ body div.datedropper.picker-lg {
   height: 20px;
   border-radius: 4px;
   margin-bottom: 5px;
+  &:focus{
+    border: 1px solid $text-color;
+  }
 }
 //end search
 

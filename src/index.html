@@ -5,7 +5,7 @@
 <body>
   @@include('components/_header.html')
   <!-- WRITE CODE HERE -->
-  <section class="search">
+  <section id="tours" class="search">
     <div class="container">
       <div class="search__title title">
         Самые популярные направления
@@ -106,9 +106,9 @@
               <span>От</span>
               <span>До</span>
             </div>
-            <div class="tour__price-result">
-              <div id='price-from' class="number-price">8000</div>
-              <div id='price-up' class="number-price">45000</div>
+            <div class="tour__price-results">
+              <input type="number" class="number-price js-input-from" value="0" />
+              <input type="number" class="number-price js-input-to" value="0" />
             </div>
             <div class="tour__price-text">
               <span class="price-total">руб.</span>
@@ -126,9 +126,7 @@
     <div class="container">
       <div class="countries__inner">
         <div class="country__item">
-          <div class="country__item-img" style="background-image: url(img/content/tyrkey.jpg);">
-
-          </div>
+          <div class="country__item-img" style="background-image: url(img/content/tyrkey.jpg);"></div>
           <div class="country__item-content">
             <a href="#"><img src="img/icons/arrow-right.svg" alt=""></a>
             <a class="country__item-title" href="#">
@@ -140,9 +138,7 @@
           </div>
         </div>
         <div class="country__item">
-          <div class="country__item-img" style="background-image: url(img/content/kefalonia.jpg);">
-
-          </div>
+          <div class="country__item-img" style="background-image: url(img/content/kefalonia.jpg);"></div>
           <div class="country__item-content">
             <a href="#"><img src="img/icons/arrow-right.svg" alt=""></a>
             <a class="country__item-title" href="#">
@@ -154,9 +150,7 @@
           </div>
         </div>
         <div class="country__item">
-          <div class="country__item-img" style="background-image: url(img/content/hurghada.jpg);">
-
-          </div>
+          <div class="country__item-img" style="background-image: url(img/content/hurghada.jpg);"></div>
           <div class="country__item-content">
             <a href="#"><img src="img/icons/arrow-right.svg" alt=""></a>
             <a class="country__item-title" href="#">
@@ -168,9 +162,7 @@
           </div>
         </div>
         <div class="country__item">
-          <div class="country__item-img" style="background-image: url(img/content/phuket.jpg);">
-
-          </div>
+          <div class="country__item-img" style="background-image: url(img/content/phuket.jpg);"></div>
           <div class="country__item-content">
             <a href="#"><img src="img/icons/arrow-right.svg" alt=""></a>
             <a class="country__item-title" href="#">
@@ -186,9 +178,7 @@
       <span id="more">
         <div class="countries__inner">
           <div class="country__item">
-            <div class="country__item-img" style="background-image: url(img/content/barcelona.jpg);">
-
-            </div>
+            <div class="country__item-img" style="background-image: url(img/content/barcelona.jpg);"></div>
             <div class="country__item-content">
               <a href="#"><img src="img/icons/arrow-right.svg" alt=""></a>
               <a class="country__item-title" href="#">
@@ -214,9 +204,7 @@
             </div>
           </div>
           <div class="country__item">
-            <div class="country__item-img" style="background-image: url(img/content/eilat.jpg);">
-
-            </div>
+            <div class="country__item-img" style="background-image: url(img/content/eilat.jpg);"></div>
             <div class="country__item-content">
               <a href="#"><img src="img/icons/arrow-right.svg" alt=""></a>
               <a class="country__item-title" href="#">
@@ -228,9 +216,7 @@
             </div>
           </div>
           <div class="country__item">
-            <div class="country__item-img" style="background-image: url(img/content/dubai.jpg);">
-
-            </div>
+            <div class="country__item-img" style="background-image: url(img/content/dubai.jpg);"></div>
             <div class="country__item-content">
               <a href="#"><img src="img/icons/arrow-right.svg" alt=""></a>
               <a class="country__item-title" href="#">
@@ -248,7 +234,7 @@
       Другие направления
     </button>
   </section>
-  <section class="hotels">
+  <section id="housing" class="hotels">
     <div class="container">
       <div class="hotels__inner">
         <div class="hotels__title title">
@@ -1236,7 +1222,7 @@
       </div>
     </div>
   </section>
-  <section class="travel-blog">
+  <section id="events" class="travel-blog">
     <div class="container">
       <div class="blog__items">
         <div class="blog__item">
