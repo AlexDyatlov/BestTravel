@@ -95,7 +95,7 @@ gulp.task("style", function () {
 			"node_modules/normalize.css/normalize.css",
 			"node_modules/jquery-form-styler/dist/jquery.formstyler.css",
 			"node_modules/jquery-form-styler/dist/jquery.formstyler.theme.css",	
-			"node_modules/ion-rangeslider/css/ion.rangeSlider.css"
+			"node_modules/ion-rangeslider/css/ion.rangeSlider.css",
 		
 		])
 		.pipe(sourcemaps.init())
@@ -113,7 +113,8 @@ gulp.task("script", function () {
 			//тут подключаем разные js в общую библиотеку. Отключите то, что вам не нужно.
 			"node_modules/jquery/dist/jquery.js",
 			"node_modules/jquery-form-styler/dist/jquery.formstyler.js",
-			"node_modules/ion-rangeslider/js/ion.rangeSlider.js"
+			"node_modules/ion-rangeslider/js/ion.rangeSlider.js",
+			"node_modules/smooth-scroll/dist/smooth-scroll.polyfills.min.js",
 		])
 		.pipe(size())
 		.pipe(sourcemaps.init())
