@@ -198,6 +198,9 @@
 }
 
 @media (max-width: 600px){
+  .header{
+    background: center/cover no-repeat url('../img/header-bg-mobile.jpg');
+  }
   .tab-item{
     &__content{
       flex-wrap: wrap;

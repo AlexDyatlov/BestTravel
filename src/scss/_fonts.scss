@@ -1,13 +1,5 @@
 @import 'local-fonts';
 
-// font-family: 'Poppins', sans-serif;
-// font-family: 'Roboto', sans-serif;
-
-
-//посмотреть все направления
-//выберите себе место для отдыха
-// Аренда жилья для вашего отпуска
-
 @font-face {
   font-family: 'ForteMTStd';
   src: url('../fonts/ForteMTStd.woff2') format('woff2'),
@@ -29,7 +21,6 @@
 }
 
 [class^="icon-"], [class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
   speak: none;
   font-style: normal;
@@ -37,8 +28,6 @@
   font-variant: normal;
   text-transform: none;
   line-height: 1;
-
-  /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

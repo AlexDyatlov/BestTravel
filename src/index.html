@@ -1,15 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 @@include('components/_head.html')
 
 <body>
   @@include('components/_header.html')
-  <!-- WRITE CODE HERE -->
   <section id="tours" class="search">
     <div class="container">
-      <div class="search__title title">
+      <h3 class="search__title title">
         Самые популярные направления
-      </div>
+      </h3>
       <div class="search__inner">
         <form>
           <div class="search__form-dropdowns cities-russia">
@@ -93,9 +92,9 @@
           </div>
         </form>
       </div>
-      <div class="tour__title title">
+      <h3 class="tour__title title">
         Цена тура
-      </div>
+      </h3>
       <div class="tour__price">
         <form>
           <div class="tour__price-range">
@@ -175,7 +174,7 @@
         </div>
         <span id="dots"></span>
       </div>
-      <span id="more">
+      <div id="more">
         <div class="countries__inner">
           <div class="country__item">
             <div class="country__item-img" style="background-image: url(img/content/barcelona.jpg);"></div>
@@ -190,9 +189,7 @@
             </div>
           </div>
           <div class="country__item">
-            <div class="country__item-img" style="background-image: url(img/content/nhatrang.jpg);">
-
-            </div>
+            <div class="country__item-img" style="background-image: url(img/content/nhatrang.jpg);"></div>
             <div class="country__item-content">
               <a href="#"><img src="img/icons/arrow-right.svg" alt=""></a>
               <a class="country__item-title" href="#">
@@ -228,7 +225,7 @@
             </div>
           </div>
         </div>
-      </span>
+      </div>
     </div>
     <button id="btn" class="more-btn" onclick="readMore()">
       Другие направления
@@ -237,9 +234,9 @@
   <section id="housing" class="hotels">
     <div class="container">
       <div class="hotels__inner">
-        <div class="hotels__title title">
+        <h3 class="hotels__title title">
           Выберите себе место для отдыха
-        </div>
+        </h3>
         <div class="hotels__text">
           <p>Найдите идеальный отель, забронируйте и оплатите онлайн со скидкой на проживание.</p>
           <p>В любой сезон вы найдёте то, что подходит именно вам.</p>
@@ -1230,14 +1227,12 @@
             ЧаВо
           </div>
           <ul class="blog__item-list">
-            <li>
             <li><a href="#">Способ оплаты</a></li>
             <li><a href="#">Как забронировать отель</a></li>
             <li><a href="#">Как сделать возврат денег</a></li>
             <li><a href="#">Документы для виз</a></li>
             <li><a href="#">Страхование</a></li>
             <li><a href="#">Политика конфиденциальности</a></li>
-            </li>
           </ul>
         </div>
         <div class="blog__item">
@@ -1259,24 +1254,18 @@
             Туристам
           </div>
           <ul class="blog__item-list">
-            <li>
             <li><a href="#">Промокоды</a></li>
             <li><a href="#">Скидки</a></li>
             <li><a href="#">Турблог</a></li>
             <li><a href="#">Отзывы</a></li>
             <li><a href="#">Новости</a></li>
             <li><a href="#">Календарь событий</a></li>
-            </li>
           </ul>
         </div>
       </div>
     </div>
   </section>
-
-
-  <!-- STOP WRITE CODE -->
   @@include('components/_footer.html')
   @@include('components/_scripts.html')
 </body>
-
 </html>

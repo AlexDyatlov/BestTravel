@@ -4,7 +4,7 @@ $('#departure-date').dateDropper({
   theme: 'my-theme',
   large: 'true',
   largeDefault: 'true',
-  maxYear: '2021',
+  maxYear: '2022',
   minYear: '2020',
   lock: 'from',
   roundtrip: 'my-trip',
