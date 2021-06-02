@@ -1,0 +1,1419 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="icon" href="img/icons/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/my-theme.css">
+  <title>BestTravel</title>
+</head>
+
+<body>
+  <header id="home" class="header">
+  <div class="header__top">
+    <div class="container">
+      <div class="header__top-inner">
+        <div class="header__logo">
+          <a href="#">
+            BestTravel
+          </a>
+        </div>
+        <nav class="menu">
+          <div class="menu__btn">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+          </div>
+          <ul class="menu__list">
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#home">
+                Главная
+              </a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#tours">
+                Туры
+              </a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#housing">
+                Проживание
+              </a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#events">
+                События
+              </a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#contacts">
+                О нас
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header__search">
+        <div class="header__search-title">
+          Добро пожаловать на <span>BestTravel</span> 
+        </div>
+        <div class="header__search-text">
+          Мы покажем все туры, а вам останется только успеть купить лучшее
+        </div>
+        <div class="header__search-form">
+          <form>
+            <input type="text" placeholder="Страна, курорт или отель" required>
+            <button type="submit">
+              Найти
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+  <section id="tours" class="search">
+    <div class="container">
+      <h3 class="search__title title">
+        Самые популярные направления
+      </h3>
+      <div class="search__inner">
+        <form>
+          <div class="search__form-dropdowns cities-russia">
+            <label>Откуда</label>
+            <select>
+              <option value="Москва">из Москвы</option>
+              <option value="Санкт-Петербурга">из Санкт-Петербурга</option>
+              <option value="Новосибирск">из Новосибирска</option>
+              <option value="Екатеринбург">из Екатеринбурга</option>
+              <option value="Н.Новгород">из Н.Новгорода</option>
+              <option value="Казань">из Казани</option>
+              <option value="Челябинск">из Челябинска</option>
+              <option value="Омск">из Омска</option>
+              <option value="Самара">из Самары</option>
+              <option value="Ростов-на-Дону">из Ростова-на-Дону</option>
+              <option value="Уфа">из Уфы</option>
+              <option value="Красноярск">из Красноярска</option>
+              <option value="Воронеж">из Воронежа</option>
+              <option value="Пермь">из Перми</option>
+              <option value="Краснодар">из Краснодара</option>
+              <option value="Архангельск">из Архангельска</option>
+              <option value="Астрахань">из Астрахани</option>
+              <option value="Анапа">из Анапы</option>
+              <option value="Барнаул">из Барнаула</option>
+              <option value="Волгоград">из Волгограда</option>
+              <option value="Белгород">из Белгорода</option>
+              <option value="Благовещенск">из Благовещенска</option>
+              <option value="Иркутск">из Иркутска</option>
+              <option value="Калининград">из Калининграда</option>
+              <option value="Кемерово">из Кемерово</option>
+              <option value="Магнитогорск">из Магнитогорска</option>
+              <option value="Мин.Воды">из Мин.Вод</option>
+              <option value="Мурманск">из Мурманска</option>
+              <option value="Нижневартовск">из Нижневартовска</option>
+              <option value="Нижнекамск">из Нижнекамска</option>
+              <option value="Новокузнецк">из Новокузнецка</option>
+              <option value="Оренбург">из Оренбурга</option>
+              <option value="Саратов">из Саратова</option>
+              <option value="Симферополь">из Симферополя</option>
+              <option value="Сочи">из Сочи</option>
+              <option value="Сургут">из Сургута</option>
+              <option value="Сыктывкар">из Сыктывкара</option>
+              <option value="Тюмень">из Тюмени</option>
+              <option value="Томск">из Томска</option>
+              <option value="Ульяновск">из Ульяновска</option>
+              <option value="Хабаровск">из Хабаровска</option>
+              <option value="Ханты-Мансийск">из Ханты-Мансийска</option>
+              <option value="Чебоксары">из Чебоксар</option>
+              <option value="Чита">из Читы</option>
+              <option value="Якутск">из Якутска</option>
+            </select>
+          </div>
+          <div class="search__form-dropdowns popular-countries">
+            <label>Популярные направления</label>
+            <select>
+              <option value="Turkey">Турция</option>
+              <option value="Thailand">Таиланд</option>
+              <option value="Greece">Греция</option>
+              <option value="Spain">Испания</option>
+              <option value="Egypt">Египет</option>
+              <option value="Vietnam">Вьетнам</option>
+              <option value="Israel">Израиль</option>
+              <option value="UAE">ОАЭ</option>
+            </select>
+          </div>
+          <div class="search__form-calendar">
+            <label>Дата вылета</label>
+            <input id="departure-date" type="text" placeholder="Дата вылета">
+          </div>
+          <div class="search__form-nights">
+            <div class="quantity">
+              <label>Количество ночей</label>
+              <input class="nights" type="number" min="1" max="14" step="1" value="6">
+            </div>
+          </div>
+          <div class="search__form-guests">
+            <div class="quantity">
+              <label>Туристы</label>
+              <input class="guests" type="number" min="1" max="6" step="1" value="2">
+            </div>
+          </div>
+        </form>
+      </div>
+      <h3 class="tour__title title">
+        Цена тура
+      </h3>
+      <div class="tour__price">
+        <form>
+          <div class="tour__price-range">
+            <input type="text" class="js-range-slider" name="my_range" value="" />
+          </div>
+          <div class="tour__price-block">
+            <div class="tour__price-text">
+              <span>От</span>
+              <span>До</span>
+            </div>
+            <div class="tour__price-results">
+              <input type="number" class="number-price js-input-from" value="0" />
+              <input type="number" class="number-price js-input-to" value="0" />
+            </div>
+            <div class="tour__price-text">
+              <span class="price-total">руб.</span>
+              <span class="price-total">руб.</span>
+            </div>
+          </div>
+        </form>
+        <button class="search__tours" type="submit">
+          Найти
+        </button>
+      </div>
+    </div>
+  </section>
+  <section class="countries">
+    <div class="container">
+      <div class="countries__inner">
+        <div class="country__item">
+          <div class="country__item-img" style="background-image: url(img/content/tyrkey.jpg);"></div>
+          <div class="country__item-content">
+            <a href="#"><img src="img/icons/arrow-right.svg" alt=""></a>
+            <a class="country__item-title" href="#">
+              Каппадокия
+            </a>
+            <a class="country__item-text" href="#">
+              Турция
+            </a>
+          </div>
+        </div>
+        <div class="country__item">
+          <div class="country__item-img" style="background-image: url(img/content/kefalonia.jpg);"></div>
+          <div class="country__item-content">
+            <a href="#"><img src="img/icons/arrow-right.svg" alt=""></a>
+            <a class="country__item-title" href="#">
+              Пляж Миртос, Кефалония
+            </a>
+            <a class="country__item-text" href="#">
+              Греция
+            </a>
+          </div>
+        </div>
+        <div class="country__item">
+          <div class="country__item-img" style="background-image: url(img/content/hurghada.jpg);"></div>
+          <div class="country__item-content">
+            <a href="#"><img src="img/icons/arrow-right.svg" alt=""></a>
+            <a class="country__item-title" href="#">
+              Хургада
+            </a>
+            <a class="country__item-text" href="#">
+              Египет
+            </a>
+          </div>
+        </div>
+        <div class="country__item">
+          <div class="country__item-img" style="background-image: url(img/content/phuket.jpg);"></div>
+          <div class="country__item-content">
+            <a href="#"><img src="img/icons/arrow-right.svg" alt=""></a>
+            <a class="country__item-title" href="#">
+              Пляж Патонг, Пхукет
+            </a>
+            <a class="country__item-text" href="#">
+              Таиланд
+            </a>
+          </div>
+        </div>
+        <span id="dots"></span>
+      </div>
+      <div id="more">
+        <div class="countries__inner">
+          <div class="country__item">
+            <div class="country__item-img" style="background-image: url(img/content/barcelona.jpg);"></div>
+            <div class="country__item-content">
+              <a href="#"><img src="img/icons/arrow-right.svg" alt=""></a>
+              <a class="country__item-title" href="#">
+                Барселона
+              </a>
+              <a class="country__item-text" href="#">
+                Испания
+              </a>
+            </div>
+          </div>
+          <div class="country__item">
+            <div class="country__item-img" style="background-image: url(img/content/nhatrang.jpg);"></div>
+            <div class="country__item-content">
+              <a href="#"><img src="img/icons/arrow-right.svg" alt=""></a>
+              <a class="country__item-title" href="#">
+                Нячанг
+              </a>
+              <a class="country__item-text" href="#">
+                Вьетнам
+              </a>
+            </div>
+          </div>
+          <div class="country__item">
+            <div class="country__item-img" style="background-image: url(img/content/eilat.jpg);"></div>
+            <div class="country__item-content">
+              <a href="#"><img src="img/icons/arrow-right.svg" alt=""></a>
+              <a class="country__item-title" href="#">
+                Эйлат
+              </a>
+              <a class="country__item-text" href="#">
+                Израиль
+              </a>
+            </div>
+          </div>
+          <div class="country__item">
+            <div class="country__item-img" style="background-image: url(img/content/dubai.jpg);"></div>
+            <div class="country__item-content">
+              <a href="#"><img src="img/icons/arrow-right.svg" alt=""></a>
+              <a class="country__item-title" href="#">
+                Дубай
+              </a>
+              <a class="country__item-text" href="#">
+                ОАЭ
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button id="btn" class="more-btn" onclick="readMore()">
+      Другие направления
+    </button>
+  </section>
+  <section id="housing" class="hotels">
+    <div class="container">
+      <div class="hotels__inner">
+        <h3 class="hotels__title title">
+          Выберите себе место для отдыха
+        </h3>
+        <div class="hotels__text">
+          <p>Найдите идеальный отель, забронируйте и оплатите онлайн со скидкой на проживание.</p>
+          <p>В любой сезон вы найдёте то, что подходит именно вам.</p>
+        </div>
+        <div class="hotels__tabs">
+          <div class="tabs">
+            <span class="tab" data-id="1">Самые ближайшие</span>
+            <span class="tab active" data-id="2">Самые популярные</span>
+            <span class="tab" data-id="3">Самые дешеые</span>
+          </div>
+          <div class="tab__content">
+            <div class="tab-item active-tab" id="1">
+              <div class="tab-item__wrapper">
+                <div class="tab-item__content">
+                  <div class="tab-item__img">
+                    <a href="#"><img src="img/hotels/design-cappadocia.jpg" alt=""></a>
+                  </div>
+                  <div class="tab-item__info">
+                    <a class="tab-item__title" href="#">
+                      Отель Design Cappadocia,
+                      <span>Гёреме, Турция</span>
+                    </a>
+                    <div class="tab-item__text">
+                      Отель расположен в городе Гёреме. В распоряжении гостей сад и терраса. К услугам гостей
+                      круглосуточная
+                      стойка регистрации, трансфер от/до аэропорта, общий лаундж и бесплатный Wi-Fi на всей территории.
+                    </div>
+                    <div class="tab-item__price">
+                      Средняя цена/ночь:
+                      <span>6 000 руб.</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-item__content">
+                  <div class="tab-item__img">
+                    <a href="#"><img src="img/hotels/artemis-cappadocia.jpg" alt=""></a>
+                  </div>
+                  <div class="tab-item__info">
+                    <a class="tab-item__title" href="#">
+                      Отель Artemis Cave Suites,
+                      <span>Гёреме, Турция</span>
+                    </a>
+                    <div class="tab-item__text">
+                      Отель с садом расположен в центре города Гёреме. На большой террасе подают блюда и напитки. С
+                      террасы открывается вид на город. К услугам гостей общий лаундж и бесплатный Wi-Fi на всей
+                      территории.
+                    </div>
+                    <div class="tab-item__price">
+                      Средняя цена/ночь:
+                      <span>7 000 руб.</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-item__content">
+                  <div class="tab-item__img">
+                    <a href="#"><img src="img/hotels/cliff-phuket.jpg" alt=""></a>
+                  </div>
+                  <div class="tab-item__info">
+                    <a class="tab-item__title" href="#">
+                      Отель The Bay Cliff,
+                      <span>Пхукет, Таиланд</span>
+                    </a>
+                    <div class="tab-item__text">
+                      Отель удобно расположен в популярном районе Патонг, прямо на пляже. Отель предлагает широкий
+                      спектр услуг и удобств, с целью предложить гостям первоклассный отдых. Трансфер до/из аэропорта.
+                    </div>
+                    <div class="tab-item__price">
+                      Средняя цена/ночь:
+                      <span>4 000 руб.</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-item__content">
+                  <div class="tab-item__img">
+                    <a href="#"><img src="img/hotels/deevana-phuket.jpg" alt=""></a>
+                  </div>
+                  <div class="tab-item__info">
+                    <a class="tab-item__title" href="#">
+                      Отель Deevana Plaza,
+                      <span>Пхукет, Таиланд</span>
+                    </a>
+                    <div class="tab-item__text">
+                      Отель является популярным выбором среди туристов, посещающих Пхукет, он расположен в 5 минутах от
+                      пляжа. Уютная атмосфера и отличный сервис это то, что вы можете ожидать во время пребывания в
+                      Deevana Plaza.
+                    </div>
+                    <div class="tab-item__price">
+                      Средняя цена/ночь:
+                      <span>3 600 руб.</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-item__content">
+                  <div class="tab-item__img">
+                    <a href="#"><img src="img/hotels/mouikis-kefalonia.jpg" alt=""></a>
+                  </div>
+                  <div class="tab-item__info">
+                    <a class="tab-item__title" href="#">
+                      Отель Mouikis,
+                      <span>Аргостолион, Греция</span>
+                    </a>
+                    <div class="tab-item__text">
+                      Стильный эко-отель находится в тихом районе в центре Аргостоли, столицы Кефалонии. К услугам
+                      гостей номера с балконом и бесплатный Wi-Fi. Расстояние от отеля до моря составляет 30 метров, а
+                      за несколько минут можно дойти до торговых улиц.
+                    </div>
+                    <div class="tab-item__price">
+                      Средняя цена/ночь:
+                      <span>6 100 руб.</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-item__content">
+                  <div class="tab-item__img">
+                    <a href="#"><img src="img/hotels/voula-kefalonia.jpg" alt=""></a>
+                  </div>
+                  <div class="tab-item__info">
+                    <a class="tab-item__title" href="#">
+                      Апартаменты Voula Myrtos,
+                      <span>Кефалония, Греция</span>
+                    </a>
+                    <div class="tab-item__text">
+                      Апартаменты с садом и балконом расположены примерно в 700м от пляжа Миртос. Из окон открывается
+                      вид на сад. К услугам гостей бесплатная частная парковка, принадлежности для барбекю и терраса для
+                      загара.
+                    </div>
+                    <div class="tab-item__price">
+                      Средняя цена/ночь:
+                      <span>10 200 руб.</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-item__content">
+                  <div class="tab-item__img">
+                    <a href="#"><img src="img/hotels/gothic-barcelona.jpg" alt=""></a>
+                  </div>
+                  <div class="tab-item__info">
+                    <a class="tab-item__title" href="#">
+                      Апартаменты Gothic-Jaume,
+                      <span>Барселона, Испания</span>
+                    </a>
+                    <div class="tab-item__text">
+                      Эти современные апартаменты с кондиционерами расположены в центральном Готическом квартале
+                      Барселоны, всего в 200 метрах от собора Барселоны. К вашим услугам бесплатный Wi-Fi и собственный
+                      балкон.
+                    </div>
+                    <div class="tab-item__price">
+                      Средняя цена/ночь:
+                      <span>6 100 руб.</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-item__content">
+                  <div class="tab-item__img">
+                    <a href="#"><img src="img/hotels/casa-barcelona.jpg" alt=""></a>
+                  </div>
+                  <div class="tab-item__info">
+                    <a class="tab-item__title" href="#">
+                      Отель Casa Luz,
+                      <span>Барселона, Испания</span>
+                    </a>
+                    <div class="tab-item__text">
+                      Отель расположен в центре Барселоны. К услугам гостей номера с кондиционером и бар. Стойка
+                      регистрации открыта круглосуточно, работает бесплатный Wi-Fi. Гости могут посетить ресторан или
+                      заказать доставку еды и напитков в номер.
+                    </div>
+                    <div class="tab-item__price">
+                      Средняя цена/ночь:
+                      <span>6 600 руб.</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-item__content">
+                  <div class="tab-item__img">
+                    <a href="#"><img src="img/hotels/elpalacio-hurghada.jpg" alt=""></a>
+                  </div>
+                  <div class="tab-item__info">
+                    <a class="tab-item__title" href="#">
+                      Отель El Palacio,
+                      <span>Хургада, Египет</span>
+                    </a>
+                    <div class="tab-item__text">
+                      Отель расположен на побережье Красного моря. Отель предлагает проживание по системе "все
+                      включено". Широкий выбор ресторанов и баров на территории отеля, в том числе обильный "шведский
+                      стол". На курорте имеются пляжи с белым песком, озелененные бассейны.
+                    </div>
+                    <div class="tab-item__price">
+                      Средняя цена/ночь:
+                      <span>2 890 руб.</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-item__content">
+                  <div class="tab-item__img">
+                    <a href="#"><img src="img/hotels/rose-hurghada.jpg" alt=""></a>
+                  </div>
+                  <div class="tab-item__info">
+                    <a class="tab-item__title" href="#">
+                      Отель Tiba Rose,
+                      <span>Хургада, Египет</span>
+                    </a>
+                    <div class="tab-item__text">
+                      Отель расположен на побережье в 150 м от пляжа Эль-Саваки. К услугам гостей различные удобства,
+                      такие как открытый бассейн и терраса. В распоряжении гостей ресторан, бесплатный Wi-Fi на всей
+                      территории. Осуществляется доставка еды и напитков в номер.
+                    </div>
+                    <div class="tab-item__price">
+                      Средняя цена/ночь:
+                      <span>2 800 руб.</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-item__content">
+                  <div class="tab-item__img">
+                    <a href="#"><img src="img/hotels/muong-nhatrang.jpg" alt=""></a>
+                  </div>
+                  <div class="tab-item__info">
+                    <a class="tab-item__title" href="#">
+                      Отель Muong Thanh,
+                      <span>Нячанг, Вьетнам</span>
+                    </a>
+                    <div class="tab-item__text">
+                      Отель расположен в центре города Нячанг, всего в 200 метрах от пляжа Нячанга. К услугам гостей
+                      открытый бассейн и современный фитнес-центр. В ресторане на территории отеля подают восхитительные
+                      блюда местной и интернациональной кухни.
+                    </div>
+                    <div class="tab-item__price">
+                      Средняя цена/ночь:
+                      <span>3 420 руб.</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-item__content">
+                  <div class="tab-item__img">
+                    <a href="#"><img src="img/hotels/maple-nhatrang.jpg" alt=""></a>
+                  </div>
+                  <div class="tab-item__info">
+                    <a class="tab-item__title" href="#">
+                      Отель Maple,
+                      <span>Нячанг, Вьетнам</span>
+                    </a>
+                    <div class="tab-item__text">
+                      Отель расположен прямо на пляже. К услугам гостей элегантные номера. Кроме того, гости могут
+                      поплавать в открытом бассейне с видом на море и горы, отведать вкусные блюда в ресторане отеля или
+                      позаниматься в фитнес-зале.
+                    </div>
+                    <div class="tab-item__price">
+                      Средняя цена/ночь:
+                      <span>1 470 руб.</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-item__content">
+                  <div class="tab-item__img">
+                    <a href="#"><img src="img/hotels/club-eilat.jpg" alt=""></a>
+                  </div>
+                  <div class="tab-item__info">
+                    <a class="tab-item__title" href="#">
+                      Отель Club In Eilat,
+                      <span>Эйлат, Израиль</span>
+                    </a>
+                    <div class="tab-item__text">
+                      Курортный отель расположен в долине, всего в 300 м от пляжа Альмог и в 7 км от центра города
+                      Эйлат. Окна просторных номеров выходят на пустыню. В ресторане подают блюда израильской и
+                      интернациональной кухни. По утрам накрывают завтрак «шведский стол».
+                    </div>
+                    <div class="tab-item__price">
+                      Средняя цена/ночь:
+                      <span>6 500 руб.</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-item__content">
+                  <div class="tab-item__img">
+                    <a href="#"><img src="img/hotels/queen-eilat.jpg" alt=""></a>
+                  </div>
+                  <div class="tab-item__info">
+                    <a class="tab-item__title" href="#">
+                      Отель Queen of Sheba,
+                      <span>Эйлат, Израиль</span>
+                    </a>
+                    <div class="tab-item__text">
+                      Роскошный отель, один из лучших отелей города Эйлат, расположен в превосходном месте с видом на
+                      Красное море. В распоряжении гостей отеля собственный торговый центр и бассейн с видом на море.
+                      Отель находится в 2 мин. ходьбы от пляжа.
+                    </div>
+                    <div class="tab-item__price">
+                      Средняя цена/ночь:
+                      <span>12 440 руб.</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-item__content">
+                  <div class="tab-item__img">
+                    <a href="#"><img src="img/hotels/atlantis-dubai.jpg" alt=""></a>
+                  </div>
+                  <div class="tab-item__info">
+                    <a class="tab-item__title" href="#">
+                      Отель Atlantis,
+                      Дубай, ОАЭ
+                    </a>
+                    <div class="tab-item__text">
+                      Пятизвездочный отель с частным песчаным пляжем расположен на острове Пальма-Джумейра. Из отеля
+                      открывается потрясающий вид на Персидский залив. Гости могут понаблюдать за жизнью обитателей
+                      подводного аквариума отеля, поплавать с дельфинами и бесплатно посетить аквапарк и океанариум.
+                    </div>
+                    <div class="tab-item__price">
+                      Номер от:
+                      <span>10 800 руб.</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-item__content">
+                  <div class="tab-item__img">
+                    <a href="#"><img src="img/hotels/palm-dubai.jpg" alt=""></a>
+                  </div>
+                  <div class="tab-item__info">
+                    <a class="tab-item__title" href="#">
+                      Отель Anantara The Palm,
+                      <span>Дубай, ОАЭ</span>
+                    </a>
+                    <div class="tab-item__text">
+                      Отель расположен в Дубае, на острове Пальма Джумейра. В распоряжении гостей эксклюзивный песчаный
+                      пляж, 3 плавательных бассейна, 4 ресторана, а также спа-центр в тайском стиле. Помимо номеров,
+                      гости могут разместиться на виллах, расположенных над морем.
+                    </div>
+                    <div class="tab-item__price">
+                      Средняя цена/ночь:
+                      <span>9 345 руб.</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-item" id="2">
+              <div class="tab-item__wrapper">
+                <div class="tab-item__content">
+                  <div class="tab-item__img">
+                    <a href="#"><img src="img/hotels/vineyard-cappadocia.jpg" alt=""></a>
+                  </div>
+                  <div class="tab-item__info">
+                    <a class="tab-item__title" href="#">
+                      Мини-отель Vineyard Cave,
+                      <span>Гёреме, Турция</span>
+                    </a>
+                    <div class="tab-item__text">
+                      Отель находится в историческом регионе Гёреме, среди "волшебных дымоходов". Номера оформлены в
+                      традиционном стиле в виде пещеры или с арками. В распоряжении гостей бесплатный Wi-Fi, а с террасы
+                      открывается вид на город и долину.
+                    </div>
+                    <div class="tab-item__price">
+                      Средняя цена/ночь:
+                      <span>4 200 руб.</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-item__content">
+                  <div class="tab-item__img">
+                    <a href="#"><img src="img/hotels/caveland-cappadocia.jpg" alt=""></a>
+                  </div>
+                  <div class="tab-item__info">
+                    <a class="tab-item__title" href="#">
+                      Отель Cappadocia Cave Land,
+                      <span>Гёреме, Турция</span>
+                    </a>
+                    <div class="tab-item__text">
+                      Отель расположен в окружении 8 волшебных дымоходов в Гереме. К услугам гостей терраса с панорамным
+                      видом на Каппадокию, оформленные в османском стиле номера и шведский стол. На всей территории
+                      бесплатный Wi-Fi.
+                    </div>
+                    <div class="tab-item__price">
+                      Средняя цена/ночь:
+                      <span>4 700 руб.</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-item__content">
+                  <div class="tab-item__img">
+                    <a href="#"><img src="img/hotels/lantern-phuket.jpg" alt=""></a>
+                  </div>
+                  <div class="tab-item__info">
+                    <a class="tab-item__title" href="#">
+                      Отель The Lantern Resorts,
+                      <span>Пхукет, Таиланд</span>
+                    </a>
+                    <div class="tab-item__text">
+                      Отель обладает полным спектром услуг, предлагает гостям комфортное проживание. Насладитесь
+                      удобствами, такими, как гидромассажная ванна, фитнес-центр, внешний бассейн, спа, массаж.
+                    </div>
+                    <div class="tab-item__price">
+                      Средняя цена/ночь:
+                      <span>3 500 руб.</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-item__content">
+                  <div class="tab-item__img">
+                    <a href="#"><img src="img/hotels/deevana-phuket.jpg" alt=""></a>
+                  </div>
+                  <div class="tab-item__info">
+                    <a class="tab-item__title" href="#">
+                      Отель Deevana Plaza,
+                      <span>Пхукет, Таиланд</span>
+                    </a>
+                    <div class="tab-item__text">
+                      Отель является популярным выбором среди туристов, посещающих Пхукет, он расположен в 5 минутах от
+                      пляжа. Уютная атмосфера и отличный сервис это то, что вы можете ожидать во время пребывания в
+                      Deevana Plaza.
+                    </div>
+                    <div class="tab-item__price">
+                      Средняя цена/ночь:
+                      <span>3 600 руб.</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-item__content">
+                  <div class="tab-item__img">
+                    <a href="#"><img src="img/hotels/porto-kefalonia.jpg" alt=""></a>
+                  </div>
+                  <div class="tab-item__info">
+                    <a class="tab-item__title" href="#">
+                      Апартаменты Faro Del Porto,
+                      <span>Кефалония, Греция</span>
+                    </a>
+                    <div class="tab-item__text">
+                      Апартаменты с собственной кухней и бесплатным Wi-Fi расположены в городе Порос на острове
+                      Кефалония. Расстояние до пляжа Порос составляет 500 м, до монастыря Девы Атру — 3 км, а до пляжа
+                      Скала — 10 км.
+                    </div>
+                    <div class="tab-item__price">
+                      Средняя цена/ночь:
+                      <span>3 750 руб.</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-item__content">
+                  <div class="tab-item__img">
+                    <a href="#"><img src="img/hotels/diana-kefalonia.jpg" alt=""></a>
+                  </div>
+                  <div class="tab-item__info">
+                    <a class="tab-item__title" href="#">
+                      Апартаменты Diana Studios,
+                      <span>Кефалония, Греция</span>
+                    </a>
+                    <div class="tab-item__text">
+                      Отель расположен в деревне Трапезаки, всего в 1,5 км от песчаного пляжа. Из окон открывается
+                      панорамный вид на море и горы. К услугам гостей открытый бассейн, оборудованная кухня, wi-fi.
+                    </div>
+                    <div class="tab-item__price">
+                      Средняя цена/ночь:
+                      <span>5 380 руб.</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-item__content">
+                  <div class="tab-item__img">
+                    <a href="#"><img src="img/hotels/atenas-barcelona.jpg" alt=""></a>
+                  </div>
+                  <div class="tab-item__info">
+                    <a class="tab-item__title" href="#">
+                      Отель Atenas Catalonia,
+                      <span>Барселона, Испания</span>
+                    </a>
+                    <div class="tab-item__text">
+                      Отель расположен в 3 остановках метро от центра Барселоны. Из бассейна на крыше открывается вид на
+                      башню Агбар и храм Святого Семейства. К услугам гостей бесплатный Wi-Fi, тренажерный зал,спа-центр
+                      с турецкой баней и шведский стол.
+                    </div>
+                    <div class="tab-item__price">
+                      Средняя цена/ночь:
+                      <span>6 150 руб.</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-item__content">
+                  <div class="tab-item__img">
+                    <a href="#"><img src="img/hotels/guella-barcelona.jpg" alt=""></a>
+                  </div>
+                  <div class="tab-item__info">
+                    <a class="tab-item__title" href="#">
+                      Отель Catalonia Park Guell,
+                      <span>Барселона, Испания</span>
+                    </a>
+                    <div class="tab-item__text">
+                      Отель расположен в жилом районе рядом с историческим центром Барселоны, в 600 м от парка Гуэль и в
+                      2 мин. от метро. В числе удобств бесплатный Wi-Fi и плавательный бассейн на крыше. На территории
+                      работают бар и ресторан.
+                    </div>
+                    <div class="tab-item__price">
+                      Средняя цена/ночь:
+                      <span>3 860 руб.</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-item__content">
+                  <div class="tab-item__img">
+                    <a href="#"><img src="img/hotels/sky-hurghada.jpg" alt=""></a>
+                  </div>
+                  <div class="tab-item__info">
+                    <a class="tab-item__title" href="#">
+                      Отель Sky View Suites,
+                      <span>Хургада, Египет</span>
+                    </a>
+                    <div class="tab-item__text">
+                      Отель расположен в нескольких шагах от пляжа Харуни. При отеле работают ресторан и бар, а также
+                      обустроена бесплатная частная парковка. К услугам гостей общий лаундж, открытый бассейн, сад и
+                      частная пляжная зона. Осуществляется доставка еды и напитков в номер.
+                    </div>
+                    <div class="tab-item__price">
+                      Средняя цена/ночь:
+                      <span>2 700 руб.</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-item__content">
+                  <div class="tab-item__img">
+                    <a href="#"><img src="img/hotels/seagull-hurghada.jpg" alt=""></a>
+                  </div>
+                  <div class="tab-item__info">
+                    <a class="tab-item__title" href="#">
+                      Отель Seagull Beach Resort,
+                      <span>Хургада, Египет</span>
+                    </a>
+                    <div class="tab-item__text">
+                      Этот 4-звездочный курортный отель расположен прямо на пляже Красного моря. Среди удобств — бассейн
+                      с водопадами и 8 открытых бассейнов, возле которых в тени установлены шезлонги. Для детей
+                      обустроен детский бассейн с водными горками.
+                    </div>
+                    <div class="tab-item__price">
+                      Средняя цена/ночь:
+                      <span>4 160 руб.</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-item__content">
+                  <div class="tab-item__img">
+                    <a href="#"><img src="img/hotels/nalicas-nhatrang.jpg" alt=""></a>
+                  </div>
+                  <div class="tab-item__info">
+                    <a class="tab-item__title" href="#">
+                      Отель Nalicas,
+                      <span>Нячанг, Вьетнам</span>
+                    </a>
+                    <div class="tab-item__text">
+                      В отеле к услугам гостей ресторан, фитнес-центр, бар, общий лаундж, терраса и бесплатным Wi-Fi. А
+                      также доставка еды и напитков в номер. Каждое утро в отеле сервируют континентальный завтрак и
+                      завтрак «шведский стол».
+                    </div>
+                    <div class="tab-item__price">
+                      Средняя цена/ночь:
+                      <span>1 670 руб.</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-item__content">
+                  <div class="tab-item__img">
+                    <a href="#"><img src="img/hotels/aoron-nhatrang.jpg" alt=""></a>
+                  </div>
+                  <div class="tab-item__info">
+                    <a class="tab-item__title" href="#">
+                      Отель Aaron,
+                      <span>Нячанг, Вьетнам</span>
+                    </a>
+                    <div class="tab-item__text">
+                      К услугам гостей ресторан, открытый бассейн, фитнес-центр и общий лаундж. На всей территории
+                      работает бесплатный Wi-Fi. Ежедневно подают континентальный завтрак. Неподалеку находится пляж
+                      Нячанг.
+                    </div>
+                    <div class="tab-item__price">
+                      Средняя цена/ночь:
+                      <span>1 770 руб.</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-item__content">
+                  <div class="tab-item__img">
+                    <a href="#"><img src="img/hotels/playa-eilat.jpg" alt=""></a>
+                  </div>
+                  <div class="tab-item__info">
+                    <a class="tab-item__title" href="#">
+                      Отель Pegasus,
+                      <span>Эйлат, Израиль</span>
+                    </a>
+                    <div class="tab-item__text">
+                      Отель расположен на северном побережье Эйлата. К услугам гостей 2 открытых бассейна, ресторан.
+                      Отель находится в 10 мин. ходьбы от пляжа на берегу Красного моря и центра Эйлата. В ресторане
+                      подают здоровые и питательные блюда, а также завтрак "шведский стол".
+                    </div>
+                    <div class="tab-item__price">
+                      Средняя цена/ночь:
+                      <span>5 930 руб.</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-item__content">
+                  <div class="tab-item__img">
+                    <a href="#"><img src="img/hotels/vista-eilat.jpg" alt=""></a>
+                  </div>
+                  <div class="tab-item__info">
+                    <a class="tab-item__title" href="#">
+                      Отель Vista,
+                      <span>Эйлат, Израиль</span>
+                    </a>
+                    <div class="tab-item__text">
+                      Отель находится недалеко от моря, главной набережной и всех развлечений и заведений курорта. В
+                      ресторане отеля сервируется полноценный израильский завтрак. На ужин подают барбекю или «шведский
+                      стол» из разнообразных блюд.
+                    </div>
+                    <div class="tab-item__price">
+                      Средняя цена/ночь:
+                      <span>4 940 руб.</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-item__content">
+                  <div class="tab-item__img">
+                    <a href="#"><img src="img/hotels/dusit-dubai.jpg" alt=""></a>
+                  </div>
+                  <div class="tab-item__info">
+                    <a class="tab-item__title" href="#">
+                      Отель Dusit D2 Kenz,
+                      <span>Дубай, ОАЭ</span>
+                    </a>
+                    <div class="tab-item__text">
+                      Отель находится в нескольких минутах ходьбы от метро. Ежедневно предлагается континентальный
+                      завтрак и завтрак «шведский стол». В ресторанах средиземноморской и тайской кухни отеля гости
+                      могут заказать блюда на свой вкус.
+                    </div>
+                    <div class="tab-item__price">
+                      Средняя цена/ночь:
+                      <span>1 900 руб.</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-item__content">
+                  <div class="tab-item__img">
+                    <a href="#"><img src="img/hotels/bandar-dubai.jpg" alt=""></a>
+                  </div>
+                  <div class="tab-item__info">
+                    <a class="tab-item__title" href="#">
+                      Отель Al Bandar Arjaan,
+                      <span>Дубай, ОАЭ</span>
+                    </a>
+                    <div class="tab-item__text">
+                      Отель с необычной архитектурой, расположен в нескольких минутах езды от международного аэропорта
+                      Дубай. Осуществляется доставка еды и напитков по меню в апартаменты. У всех ресторанов есть
+                      красивая терраса, откуда открывается вид на знаменитый городской пейзаж.
+                    </div>
+                    <div class="tab-item__price">
+                      Средняя цена/ночь:
+                      <span>4 540 руб.</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-item" id="3">
+              <div class="tab-item__wrapper">
+                <div class="tab-item__content">
+                  <div class="tab-item__img">
+                    <a href="#"><img src="img/hotels/valleypark-cappadocia.jpg" alt=""></a>
+                  </div>
+                  <div class="tab-item__info">
+                    <a class="tab-item__title" href="#">
+                      Хостел Valleypark,
+                      <span>Гёреме, Турция</span>
+                    </a>
+                    <div class="tab-item__text">
+                      Отель Valleypark находится в 2 минутах езды от национального парка Гёреме и в 300 метрах от центра
+                      города. К услугам гостей терраса на крыше, с которой открывается панорамный вид на город, а также
+                      номера с бесплатным Wi-Fi.
+                    </div>
+                    <div class="tab-item__price">
+                      Номер от:
+                      <span>850 руб.</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-item__content">
+                  <div class="tab-item__img">
+                    <a href="#"><img src="img/hotels/terra-cappadocia.jpg" alt=""></a>
+                  </div>
+                  <div class="tab-item__info">
+                    <a class="tab-item__title" href="#">
+                      Хостел Terra Vista,
+                      <span>Гёреме, Турция</span>
+                    </a>
+                    <div class="tab-item__text">
+                      Гости этого хостела, расположенного в удивительном старинном поселке Гереме, по достоинству оценят
+                      открывающийся из него вид на Национальный парк Гереме и Долину роз, а также номера с бесплатным
+                      Wi-Fi, терраса и парковка.
+                    </div>
+                    <div class="tab-item__price">
+                      Номер от:
+                      <span>550 руб.</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-item__content">
+                  <div class="tab-item__img">
+                    <a href="#"><img src="img/hotels/sole-phuket.jpg" alt=""></a>
+                  </div>
+                  <div class="tab-item__info">
+                    <a class="tab-item__title" href="#">
+                      Отель Sole,
+                      <span>Пхукет, Таиланд</span>
+                    </a>
+                    <div class="tab-item__text">
+                      Отель расположен в 300 метрах от центра города и в 10 минутах ходьбы от пляжа Патонг. К услугам
+                      его гостей гидромассажная ванна, ресторан и современные номера в тайском стиле. В каждом номере
+                      подключен бесплатный Wi-Fi.
+                    </div>
+                    <div class="tab-item__price">
+                      Номер от:
+                      <span>590 руб.</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-item__content">
+                  <div class="tab-item__img">
+                    <a href="#"><img src="img/hotels/villa-phuket.jpg" alt=""></a>
+                  </div>
+                  <div class="tab-item__info">
+                    <a class="tab-item__title" href="#">
+                      Отель The Villa Residences,
+                      <span>Пхукет, Таиланд</span>
+                    </a>
+                    <div class="tab-item__text">
+                      Трехзвездочный отель располагает сауной и солнечной террасой. Расположен на пляже Патонг, в 1,1 км
+                      от пляжа Патонг. К услугам гостей ресторан, бесплатная парковка, открытый бассейн и фитнес-центр.
+                    </div>
+                    <div class="tab-item__price">
+                      Номер от:
+                      <span>620 руб.</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-item__content">
+                  <div class="tab-item__img">
+                    <a href="#"><img src="img/hotels/astir-kefalonia.jpg" alt=""></a>
+                  </div>
+                  <div class="tab-item__info">
+                    <a class="tab-item__title" href="#">
+                      Апартаменты Astir,
+                      <span>Кефалония, Греция</span>
+                    </a>
+                    <div class="tab-item__text">
+                      Апартаменты находятся в 10 метрах от пляжа Порос и в 100 метрах от центра. Гостям предлагается
+                      размещение в кондиционированных номерах с балконом с видом на Ионическое море или горы острова
+                      Кефалонии.
+                    </div>
+                    <div class="tab-item__price">
+                      Номер от:
+                      <span>2 500 руб.</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-item__content">
+                  <div class="tab-item__img">
+                    <a href="#"><img src="img/hotels/dion-kefalonia.jpg" alt=""></a>
+                  </div>
+                  <div class="tab-item__info">
+                    <a class="tab-item__title" href="#">
+                      Апартаменты Dioni,
+                      <span>Кефалония, Греция</span>
+                    </a>
+                    <div class="tab-item__text">
+                      Апартаменты расположены в 150 м от пляжа Порос на острове Кефалония. К услугам гостей апартаменты
+                      с собственной кухней и панорамным видом на Ионическое море. В апарт-отеле работает бар.
+                    </div>
+                    <div class="tab-item__price">
+                      Номер от:
+                      <span>2 690 руб.</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-item__content">
+                  <div class="tab-item__img">
+                    <a href="#"><img src="img/hotels/allbergium-barcelona.jpg" alt=""></a>
+                  </div>
+                  <div class="tab-item__info">
+                    <a class="tab-item__title" href="#">
+                      Хостел Alberguinn,
+                      <span>Барселона, Испания</span>
+                    </a>
+                    <div class="tab-item__text">
+                      Хостел расположен менее чем в 500 метрах от бульвара Лас Рамблас, в 5 минутах ходьбы от станции
+                      метро Gracia и железнодорожного вокзала. К услугам гостей стильные номера, оформленные в духе
+                      минимализма, с бесплатным Wi-Fi.
+                    </div>
+                    <div class="tab-item__price">
+                      Номер от:
+                      <span>2 300 руб.</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-item__content">
+                  <div class="tab-item__img">
+                    <a href="#"><img src="img/hotels/mont-barcelona.jpg" alt=""></a>
+                  </div>
+                  <div class="tab-item__info">
+                    <a class="tab-item__title" href="#">
+                      Хостел Mont Thabor,
+                      <span>Барселона, Испания</span>
+                    </a>
+                    <div class="tab-item__text">
+                      Этот комфортабельный гостевой дом расположен на улице Лас-Рамблас, в 1 минуте ходьбы от станции
+                      метро Liceu. К услугам гостей бесплатный Wi-Fi, круглосуточная стойка регистрации и уютные номера
+                      с телевизором.
+                    </div>
+                    <div class="tab-item__price">
+                      Номер от:
+                      <span>1 900 руб.</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-item__content">
+                  <div class="tab-item__img">
+                    <a href="#"><img src="img/hotels/rooms-hurghada.jpg" alt=""></a>
+                  </div>
+                  <div class="tab-item__info">
+                    <a class="tab-item__title" href="#">
+                      Апартаменты Lilly Rooms,
+                      <span>Хургада, Египет</span>
+                    </a>
+                    <div class="tab-item__text">
+                      Популярные достопримечательности вблизи отеля включают пляж Вью-Хургада, пляжи Хауни и Махмия.
+                      Расстояние от апартаментов до международного аэропорта Хургады составляет 9 км. Каждое утро
+                      сервируется континентальный завтрак.
+                    </div>
+                    <div class="tab-item__price">
+                      Номер от:
+                      <span>1 160 руб.</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-item__content">
+                  <div class="tab-item__img">
+                    <a href="#"><img src="img/hotels/turtles-hurghada.jpg" alt=""></a>
+                  </div>
+                  <div class="tab-item__info">
+                    <a class="tab-item__title" href="#">
+                      Апартаменты Beachview Turtles,
+                      <span>Хургада, Египет</span>
+                    </a>
+                    <div class="tab-item__text">
+                      Апартаменты с бесплатной частной парковкой расположены в Хургаде, в губернаторском регионе
+                      Красного моря. Каждое утро сервируется континентальный завтрак.
+                    </div>
+                    <div class="tab-item__price">
+                      Номер от:
+                      <span>1 440 руб.</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-item__content">
+                  <div class="tab-item__img">
+                    <a href="#"><img src="img/hotels/seaview-nhatrang.jpg" alt=""></a>
+                  </div>
+                  <div class="tab-item__info">
+                    <a class="tab-item__title" href="#">
+                      Отель Aqua Seaview,
+                      <span>Нячанг, Вьетнам</span>
+                    </a>
+                    <div class="tab-item__text">
+                      Отель расположен в 1,3 км от парка аттракционов. Во всех номерах есть телевизор с плоским экраном
+                      и кабельными каналами, а также собственная ванная комната. К услугам гостей бесплатный Wi-Fi.
+                      Вблизи отеля пляж Нячанг.
+                    </div>
+                    <div class="tab-item__price">
+                      Номер от:
+                      <span>975 руб.</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-item__content">
+                  <div class="tab-item__img">
+                    <a href="#"><img src="img/hotels/lily-nhatrang.jpg" alt=""></a>
+                  </div>
+                  <div class="tab-item__info">
+                    <a class="tab-item__title" href="#">
+                      Апартаменты Lily,
+                      <span>Нячанг, Вьетнам</span>
+                    </a>
+                    <div class="tab-item__text">
+                      Апартаменты расположены в городе Нячанг, в 2 км от пляжа Нячанг. К услугам гостей фитнес-центр,
+                      бесплатная частная парковка, бар и общий лаундж. В каждом номере имеется собственная ванная
+                      комната.
+                    </div>
+                    <div class="tab-item__price">
+                      Номер от:
+                      <span>840 руб.</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-item__content">
+                  <div class="tab-item__img">
+                    <a href="#"><img src="img/hotels/motel-eilat.jpg" alt=""></a>
+                  </div>
+                  <div class="tab-item__info">
+                    <a class="tab-item__title" href="#">
+                      Мотель Aviv,
+                      <span>Эйлат, Израиль</span>
+                    </a>
+                    <div class="tab-item__text">
+                      Мотель Aviv расположен в центре города Эйлата. До торговой набережной и пляжей города — 10 минут
+                      ходьбы. В номерах имеются балкон, мини-кухня. Номера оснащены кондиционером, бесплатным Wi-Fi и
+                      телевизором с кабельными каналами.
+                    </div>
+                    <div class="tab-item__price">
+                      Номер от:
+                      <span>2 960 руб.</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-item__content">
+                  <div class="tab-item__img">
+                    <a href="#"><img src="img/hotels/luxury-eilat.jpg" alt=""></a>
+                  </div>
+                  <div class="tab-item__info">
+                    <a class="tab-item__title" href="#">
+                      Апартаменты Luxury Suites,
+                      <span>Эйлат, Израиль</span>
+                    </a>
+                    <div class="tab-item__text">
+                      Апартаменты расположен в тихом местечеке в Эйлате, в 10 минутах ходьбы до ближайшего пляжа и
+                      торгового района. К вашим услугам номера с кондиционером и бесплатным Wi-Fi. Апартаменты оформлены
+                      в современном стиле.
+                    </div>
+                    <div class="tab-item__price">
+                      Номер от:
+                      <span>2 170 руб.</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-item__content">
+                  <div class="tab-item__img">
+                    <a href="#"><img src="img/hotels/saffron-dubai.jpg" alt=""></a>
+                  </div>
+                  <div class="tab-item__info">
+                    <a class="tab-item__title" href="#">
+                      Отель Saffron,
+                      <span>Дубай, ОАЭ</span>
+                    </a>
+                    <div class="tab-item__text">
+                      Отель расположен недалеко от набережной и в 5 км от пляжа. В распоряжении гостей бассейн на крыше
+                      с регулируемой температурой, тренажерный зал, ресторан и бар. В ресторана подают разнообразные
+                      блюда дальневосточной и южноазиатской кухни.
+                    </div>
+                    <div class="tab-item__price">
+                      Номер от:
+                      <span>1 540 руб.</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-item__content">
+                  <div class="tab-item__img">
+                    <a href="#"><img src="img/hotels/pearl-dubai.jpg" alt=""></a>
+                  </div>
+                  <div class="tab-item__info">
+                    <a class="tab-item__title" href="#">
+                      Отель Pearl City Suites,
+                      <span>Дубай, ОАЭ</span>
+                    </a>
+                    <div class="tab-item__text">
+                      Отель с современными номерами, открытым бассейном и мраморным полом. По утрам гостям подают
+                      завтрак «шведский стол» с блюдами интернациональной кухни. Гости могут пользоваться гидромассажной
+                      ванной и сауной.
+                    </div>
+                    <div class="tab-item__price">
+                      Номер от:
+                      <span>670 руб.</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="events" class="travel-blog">
+    <div class="container">
+      <div class="blog__items">
+        <div class="blog__item">
+          <div class="blog__item-title">
+            ЧаВо
+          </div>
+          <ul class="blog__item-list">
+            <li><a href="#">Способ оплаты</a></li>
+            <li><a href="#">Как забронировать отель</a></li>
+            <li><a href="#">Как сделать возврат денег</a></li>
+            <li><a href="#">Документы для виз</a></li>
+            <li><a href="#">Страхование</a></li>
+            <li><a href="#">Политика конфиденциальности</a></li>
+          </ul>
+        </div>
+        <div class="blog__item">
+          <div class="blog__item-title">
+            Новостная рассылка
+          </div>
+          <div class="blog__item-text">
+            Узнавайте о горящих турах первыми!
+          </div>
+          <div class="blog__item-form">
+            <form>
+              <input type="email" placeholder="Ваш E-mail адрес" required>
+              <button type="submit"></button>
+            </form>
+          </div>
+        </div>
+        <div class="blog__item">
+          <div class="blog__item-title">
+            Туристам
+          </div>
+          <ul class="blog__item-list">
+            <li><a href="#">Промокоды</a></li>
+            <li><a href="#">Скидки</a></li>
+            <li><a href="#">Турблог</a></li>
+            <li><a href="#">Отзывы</a></li>
+            <li><a href="#">Новости</a></li>
+            <li><a href="#">Календарь событий</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer id="contacts" class="footer">
+  <div class="footer__content">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="header__logo footer__logo">
+          <a href="#">
+            BestTravel
+          </a>
+        </div>
+        <div class="footer__col footer__col-countries">
+          <div class="footer__col-title">
+            Гид по странам
+          </div>
+          <ul class="footer__col-list">
+            <li><a href="#">Путевки в Турцию</a></li>
+            <li><a href="#">Путевки в Таиланд</a></li>
+            <li><a href="#">Путевки в Грецию</a></li>
+            <li><a href="#">Путевки в Испанию</a></li>
+            <li><a href="#">Путевки в Египет</a></li>
+            <li><a href="#">Путевки в Вьетнам</a></li>
+            <li><a href="#">Путевки в Израиль</a></li>
+            <li><a href="#">Путевки в ОАЭ</a></li>
+          </ul>
+        </div>
+        <div class="footer__col footer__col-company">
+          <div class="footer__col-title">
+            О компании
+          </div>
+          <ul class="footer__col-list">
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">Контакты</a></li>
+            <li><a href="#">Медиа</a></li>
+            <li><a href="#">Награды</a></li>
+            <li><a href="#">Команда</a></li>
+            <li><a href="#">Вакансии</a></li>
+            <li><a href="#">Общая информация</a></li>
+            <li><a href="#">Служба поддержки</a></li>
+          </ul>
+        </div>
+        <div class="footer__col footer__col-adress">
+          <div class="footer__col-title">
+            Контакты
+          </div>
+          <a class="footer__info footer__info-email" href="mailto:info-BestTravel@mail.ru">
+            info-BestTravel@mail.ru
+          </a>
+          <a class="footer__info footer__info-phone" href="tel:79049384127">
+            +7 (904) 938-41-27
+          </a>
+          <a id="button"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer__copy">
+    <div class="container">
+      <div class="footer__copy-inner">
+        <div class="footer__copy-text">
+          © BestTravel 2020. Все права защищены.
+        </div>
+        <ul class="footer__copy-social">
+          <li>
+            <a class="footer__copy-link link-twitter" href="https://twitter.com/?lang=ru"></a>
+          </li>
+          <li>
+            <a class="footer__copy-link link-facebook" href="https://ru-ru.facebook.com/"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/datedropper.pro.min.js"></script>
+<script src="js/datedropper.js"></script>
+<script src="js/libs.min.js"></script>
+<script src="js/main.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+div.datedropper.my-theme {
+  --dd-color1: #f76f8d;
+  --dd-color2: #FFF;
+  --dd-color3: #4D4D4D;
+  --dd-color4: #FFF;
+  --dd-radius: 8px;
+  --dd-width: 180px;
+  --dd-shadow: 0 0 32px 13px rgba(0, 0, 0, 0.1);
+}
+
