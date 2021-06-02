@@ -14,6 +14,7 @@
     "datedropper": "^2.0.0",
     "del": "^5.1.0",
     "fontforge": "^0.0.4",
+    "gh-pages": "^3.2.0",
     "global": "^4.4.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
@@ -51,7 +52,8 @@
     "ttf2woff2": "^3.0.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d build"
   },
   "repository": "https://github.com/budfy/Easy-webdev-startpack.git",
   "author": "Roman Serdyuk",
@@ -59,5 +61,5 @@
   "bugs": {
     "url": "https://github.com/budfy/Startpack_Gulp4/issues"
   },
-  "homepage": "https://github.com/budfy/Startpack_Gulp4#readme"
+  "homepage": "http://alexdyatlov.github.io/BestTravel"
 }
